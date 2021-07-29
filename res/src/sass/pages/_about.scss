@@ -1,0 +1,265 @@
+#header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 1.7rem 0 8.4rem 0;
+
+    & .container{
+        padding: 0 3.3rem;
+    }
+}
+
+#hero-section-about{
+    width: 100%;
+    height: 56.0rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 19.6rem;
+
+    @include respond(tab-break){
+        height: auto;
+        margin-bottom: 8.0rem;
+    }
+
+    @include respond(phone-break){
+        margin-bottom: 5.2rem;
+    }
+}
+
+#hero-section-index{
+    margin-bottom: 6.0rem;
+    width: 100%;
+    height: 56.0rem;
+    display: flex;
+    justify-content: center;
+
+    @include respond(tab-break){
+        height: auto;
+        margin-bottom: 8.0rem;
+    }
+
+    @include respond(phone-break){
+        margin-bottom: 5.2rem;
+
+        & .hero__right{
+            height: 31.7rem;
+        }
+    }
+}
+
+#testimonial-section{
+    display: flex;
+    justify-content: center;
+    border: .2rem solid $green;
+    box-sizing: border-box;
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('/pictures/testimonial-art.png');
+    
+    @include respond(desktop-break){
+        background-size: cover;
+    }
+
+    @include respond(tab-break){
+        background-image: url('/pictures/testimonial-art-tab.png');
+    }
+
+    @include respond(phone-break){
+        background-image: url('/pictures/testimonial-art-phone.png');
+    }
+
+}
+
+.testimonial{
+    text-align: center;
+    &__svg{
+        position: absolute;
+    }
+
+    &__img{
+        position: relative;
+        display: block;
+        width: 99.53rem;
+        height: 59.6rem;
+        margin: 6.5rem auto 7.0rem auto;
+
+        & img{
+            width: 99.53rem;
+            height: 59.6rem;
+        }
+
+        @include respond(tab-break){
+            width: 55.3rem;
+            height: 31.8rem;
+            margin: 3.4rem auto 3.9rem auto;
+            & img{
+                width: 53.3rem;
+                height: 31.8rem;
+            }
+            
+        }
+
+        @include respond(phone-break){
+            width: 55.3rem;
+            height: 31.8rem;
+            margin: 18.2rem auto 6.0rem auto;
+
+            & img{
+                width: 52.2rem;
+                height: 33.3rem;
+            }
+        }
+    }
+
+}
+
+.quote-section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 24.7rem;
+    margin-bottom: 6.8rem;
+
+    @include respond(tab-break){
+        margin-top: 14.2rem;
+        margin-bottom: 5.0rem;
+    }
+
+    @include respond(phone-break){
+        margin-top: 7.2rem;
+        margin-bottom: 5.0rem;
+    }
+}
+
+#regret{
+    height: 90.0rem;
+    width: 100%;
+    background-position: top;
+    background-size: cover;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($black-4, 0.58),
+        rgba($black-4, 0.58)), 
+    url('/pictures/regret-img.jpg');
+    @include respond(tab-break){
+        height: 77.0rem;
+        width: 76.8rem;
+        padding-top: 8.4rem;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($black-4, 0.58),
+            rgba($black-4, 0.58)), 
+        url('/pictures/regret-img-tab.jpg');
+    }
+    @include respond(phone-break){
+        height: 76.0rem;
+        width: 56.8rem;
+        padding-top: 8.4rem;
+        background-image: linear-gradient(
+            to right bottom,
+            rgba($black-4, 0.58),
+            rgba($black-4, 0.58)), 
+        url('/pictures/regret-img-phone.jpg');
+    }
+    color: $white;
+    display: flex;
+    justify-content: center;
+}
+
+.regret{
+    &__text{
+        margin-top: 9.4rem;
+        @include respond(tab-break){
+            &>*{
+                width: 50.8rem;
+            }
+            margin-top: 0;
+        }
+
+        @include respond(phone-break){
+            &>*{
+                width: 53.2rem;
+            }
+        }
+    }
+}
+
+#marketing{
+    height: 136.1rem;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    background-image: linear-gradient(
+        -250deg,
+        rgba($black, 0.92),
+        rgba($black, 0.26)), 
+    url('/pictures/marketing-img.jpg');
+    color: $white;
+    display: flex;
+    justify-content: center;    
+    @include respond(tab-break){
+        background-position: center;
+        height: 82.0rem;
+        width: 76.8rem;
+        padding-top: 5.5rem;
+        background-image: linear-gradient(
+            -250deg,
+            rgba($black, 0.92),
+            rgba($black, 0.26)), 
+        url('/pictures/marketing-img-tab.jpg');
+    }
+
+    @include respond(phone-break){
+        background-position: center;
+        height: 129.3rem;
+        width: 56.7rem;
+        padding-top: 5.5rem;
+        background-image: linear-gradient(
+            -250deg,
+            rgba($black, 0.92),
+            rgba($black, 0.26)), 
+        url('/pictures/marketing-img-phone.jpg');
+    }
+}
+
+.marketing{
+    &__text{
+        &>*{
+            width: 63.7rem;
+        }
+        margin-top: 12.1rem;
+        @include respond(tab-break){
+            &>*{
+                width: 35.2rem;
+            }
+            margin-top: 0;
+        }
+
+        @include respond(phone-break){
+            
+            &>*{
+                width: 52.1rem;
+                margin-left: 3.3rem;
+            }
+
+        }
+    }
+    
+}
+
+#footer__section{
+    display: flex;
+    justify-content: center;
+    height: 41.4rem;
+    background: $grey;
+    padding-top: 10.4rem;
+
+    @include respond(tab-break){
+        height: 60.0rem;
+    }
+
+    @include respond(phone-break){
+        height: 90.0rem;
+    }
+}

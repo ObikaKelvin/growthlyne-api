@@ -1,0 +1,165 @@
+.list{
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+
+        &:not(:last-of-type){
+            margin-bottom: 6.0rem;
+            
+            @include respond(tab-break){
+                margin-bottom: 4.0rem;
+            }
+
+        }
+
+        &--freelancers{
+            &:not(:last-of-type){
+                margin-bottom: 2.0rem;
+            }
+
+            @include respond(tab-break){
+                justify-content: flex-start;
+            }
+        }
+
+        &--knowledge{
+            &:not(:last-of-type){
+                margin-bottom: 2rem;
+
+                @include respond(tab-break){
+                    margin-bottom: 1rem;
+                }
+            }
+
+            @include respond(tab-break){
+                justify-content: flex-start;
+            }
+            
+        }
+
+        &--actionable{
+            margin-bottom: 5.8rem;
+        }
+
+        &--checkout{
+            justify-content: flex-start;
+        }
+
+    }
+
+    &__icon{
+        margin-right: 3.0rem;
+        margin-top: 1.0rem;
+
+        @include respond(tab-break){
+            width: 2.06rem;
+            height: 2.06rem;
+        }
+
+        &--sm{
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+
+        &--md{
+            width: 3.2rem;
+            height: 3.2rem;
+
+            @include respond(tab-break){
+                width: 2.6rem;
+                height: 2.6rem;
+            }
+
+            @include respond(phone-break){
+                width: 2.2rem;
+                height: 2.2rem;
+            }
+        }
+
+        &--discover{
+            margin-right: 5.8rem;
+
+            @include respond(phone-break){
+                margin-right: 2rem;
+            }
+        }
+
+        &--checkout{
+            margin-right: 1.8rem;
+        }
+
+        
+    }
+
+    &__content{
+        width: 92.9rem;
+        text-transform: capitalize;
+
+        @include respond(tab-break){
+            width: 51.7rem;
+            &:last-child{
+                margin-bottom: 5.0rem;
+            }
+        }
+
+        @include respond(phone-break){
+            font-size: 2.4rem;
+        }
+
+        &--sm{
+            font-size: 2.6rem;
+
+            @include respond(tab-break){
+                font-size: 1.8rem;
+            }
+        }
+
+        &--footer{
+            font-size: 2.4rem;
+        }
+
+        &--discover{
+            width: 71rem;
+
+            @include respond(tab-break){
+                width: 58rem;
+            }
+
+            @include respond(phone-break){
+                width: 45rem;
+            }
+        }
+
+        &--knowledge{
+            width: 100%;
+            @include respond(tab-break){
+                width: 50.7rem;
+            }
+
+            @include respond(phone-break){
+                width: 40.7rem;
+            }
+        }
+
+        &--freelancers{
+            width: 53.9rem;
+
+            @include respond(tab-break){
+                width: 34.4rem;
+                line-height: 1.2rem;
+            }
+        }
+
+        &--checkout{
+            width: 41.8rem;
+            line-height: 3.36rem;
+            font-size: 2.4rem;
+
+            @include respond(tab-break){
+                width: 41rem;
+            }
+        }
+    }
+}

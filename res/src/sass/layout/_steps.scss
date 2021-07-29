@@ -1,0 +1,255 @@
+.steps{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 13.3rem;
+
+    &__item{
+        display: flex;
+        position: relative;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        &:not(:last-child){
+            margin-bottom: 14.5rem;
+           
+            @include respond(tab-break){
+                margin-bottom: 5.2rem;
+            }
+        }
+
+        &:first-child{
+            margin-right: 2rem;
+        }
+
+        &:nth-child(odd){
+            margin-left: 16rem;
+
+            @include respond(tab-break){
+                margin-left: 4rem;
+            }
+
+            @include respond(phone-break){
+                flex-direction: column;
+                align-items: center;
+                margin-right: 0;
+            }
+        }
+
+        &:nth-child(even){
+            flex-direction: row-reverse;
+            margin-right: 10rem;
+
+            @include respond(tab-break){
+                margin-right: 4rem;
+            }
+
+            @include respond(phone-break){
+                flex-direction: column;
+                align-items: center;
+                margin-right: 0;
+            }
+        }
+
+        & .offer__item{
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+        }
+
+        &--freelancers{
+            align-items: center;
+        }
+
+        &--inside{
+            align-items: center;
+        }
+
+        &--planning{
+            align-items: flex-start;
+        }
+
+        &--1{
+            &:not(:last-child){
+                @include respond(tab-break){
+                    margin-bottom: 12rem;
+                }
+            }
+
+            &:nth-child(even){  
+                @include respond(tab-break){
+                    flex-direction: column;
+                    align-items: center;
+                    margin-right: 0;
+                }
+            }
+
+            &:nth-child(odd){
+                @include respond(tab-break){
+                    margin-left: 0;
+                }
+            }
+
+            & .steps__paragraph{
+
+                @include respond(tab-break){
+                    margin-bottom: 4rem;
+                    width: 62rem;
+                }
+
+                @include respond(phone-break){
+                    width: 52rem;
+                }
+            }
+
+            & .steps__sub{
+
+                @include respond(tab-break){
+                    font-size: 3.2rem;
+                    line-height: 4.5rem;
+                }
+            }
+
+            @include respond(tab-break){
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+
+    &__paragraph{
+        width: 64.1rem;
+        color: $black-3;
+        
+        @include respond(tab-break){
+            width: 34rem;
+        }
+
+        @include respond(phone-break){
+            width: 51rem;
+        }
+
+        &--planning{
+            @include respond(tab-break){
+                width: 68rem !important;
+            }
+
+            @include respond(phone-break){
+                width: 54rem !important;
+            }
+        }
+    }
+
+    &__title{
+        font-family: 'Source Sans Pro';
+        font-size: 6.5rem;
+        text-align: left;
+        color: $primary-red;
+        margin-bottom: 3.2rem;
+
+        &--sub{
+            font-size: 4.8rem;
+            text-align: left;
+            width: 57.1rem;
+            font-family: Bitter;
+            font-weight: 700;
+            margin-bottom: 3.2rem;
+
+            @include respond(tab-break){
+                font-size: 3.2rem;
+                width: 30rem;
+            }
+
+            @include respond(phone-break){
+                font-size: 3.5rem;
+                line-height: 4.5rem;
+                width: 51rem;
+            }
+        }
+
+        &--planning{
+            width: 65rem;
+            font-size: 4rem;
+            text-align: center;
+
+            @include respond(phone-break){
+                width: 100%;
+                font-size: 3.8rem;
+                line-height: 4.8rem;
+            }
+        }
+
+        @include respond(tab-break){
+            text-align: center;
+        }
+    }
+
+    &__sub{
+        width: 55rem;
+        margin-bottom: 4.4rem;
+        text-transform: capitalize;
+
+        
+        @include respond(tab-break){
+            width: auto;
+        }
+
+        @include respond(phone-break){
+            font-size: 2.2rem;
+        }
+    }
+
+    &__text{
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+
+        // @include respond(tab-break){
+        //     width: 48.4rem;
+        // }
+    }
+
+    &__art{
+        width: 50.3rem;
+        height: auto;
+        // height: 57.5rem;
+
+        @include respond(tab-break){
+            width: 39.5rem;
+            height: auto;
+        }
+    }
+
+    &__img{
+        width: 60.5rem;
+        height: 55rem;
+
+        @include respond(tab-break){
+            width: 31.3rem;
+            height: 28.4rem;
+        }
+
+        &--sm{
+            width: 57.6rem;
+            height: 46.7rem;
+
+            @include respond(tab-break){
+                width: 30.1rem;
+                height: 24.3rem;
+            }
+        }
+
+        &--lg{
+            width: 58.3rem;
+            height: 66.9rem;
+            bottom: 0;
+
+            @include respond(tab-break){
+                width: 42.9rem;
+                height: 45.4rem;
+            }
+        }
+
+    }
+}

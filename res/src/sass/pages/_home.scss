@@ -1,0 +1,40 @@
+#getstarted-section{
+    display: flex;
+    justify-content: center;
+    height: 108.3rem;
+    background-color: $blue;
+    color: $white;
+    text-align: left;
+}
+
+.getstarted__img{
+    // width: 100%;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+}
+
+.getstarted__item{
+    margin-top: 4.0rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.getstarted__item--icon{
+    margin-right: 4.0rem;
+    margin-top: 1.0rem;
+}
+
+.getstarted__text{
+    width: 90.4rem;
+}
+
+.getstarted__btn .btn{
+    font-size: 2.6rem;
+}
+
+.getstarted__btn .btn{
+    text-transform: uppercase;
+}

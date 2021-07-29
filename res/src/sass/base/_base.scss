@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+
+    // @include respond(tab-break){
+    //     font-size: 46.875%;        
+    // }
+
+    @include respond(phone-m-break){
+        font-size: 46.875%;        
+    }
+
+    @include respond(phone-s-break){
+        font-size: 36.875%;    
+    }
+}
+
+body{
+    font-family: 'Source Sans Pro', Courier, monospace;
+    font-size: 3.2rem;
+    font-weight: 400;
+    overflow-x: hidden;
+    
+}

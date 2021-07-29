@@ -1,0 +1,22 @@
+.container{
+    flex: 1;
+    padding: 0 3.3rem;
+    max-width: 112.0rem;
+    margin: 0 auto;
+
+    @include respond(phone-break){
+        padding: 0;
+    }
+
+    &__pad{
+        padding: 11.6rem 3.3rem;
+
+        @include respond(tab-break){
+            padding: 8rem;
+        }
+
+        @include respond(phone-break){
+            padding: 8rem 4rem;
+        }
+    }
+}

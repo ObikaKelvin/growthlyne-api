@@ -1,0 +1,120 @@
+.btn{
+    &,
+    &:link,
+    &:visited{
+        text-decoration: none;
+        outline: none;
+        color: $white;
+        background-color: $primary-red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #FF0035;
+        border-radius: 5.0rem;
+        border: none;
+        cursor: pointer;
+        font-style: normal;
+        transform: translateY(0);
+        transition: transform .1s ease-in;
+    }
+
+    &:hover{
+        transform: translateY(-.3rem);
+    }
+
+    &:focus{
+        transform: translateY(0);
+    }
+
+    &__sm{
+        font-size: 1.8rem;
+        line-height: 137.5%;
+        text-transform: capitalize;
+        height: 5.0rem;
+        width: 17.5rem;
+        font-weight: normal;
+        @include respond(tab-break){
+            height: 3.7rem;
+            width: 15.8rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    &__md{
+        font-size: 2.4rem;
+        line-height: 3.36rem;
+        text-transform: capitalize;
+        height: 5.0rem;
+        width: 37.2rem;
+        font-weight: normal;
+        margin-bottom: 2.4rem;
+
+        @include respond(tab-break){
+            height: 5.0rem;
+            width: 31.4rem;
+            font-size: 2.4rem;
+        }
+    }
+
+    &__lg{
+        font-size: 2.6rem;
+        font-weight: 700;
+        line-height: 137.5%;
+        width: 62.6rem;
+        height: 11.0rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include respond(tab-break){
+            width: 33.39rem;
+            height: 5.86rem;
+            font-size: 1.6rem;
+        }
+
+        @include respond(phone-break){
+            font-size: 1.6rem;
+            width: 32.8rem;
+            // width: 25.2rem;
+            height: 6.0rem;
+            font-weight: 700 !important;
+        }
+    }
+
+    &__icon{
+        width: 4.9rem;
+        height: 5rem;
+        margin-right: 3rem;
+
+        @include respond(tab-break){
+            width: 2.68rem;
+            height: 2.68rem;
+        }
+        
+    }
+
+    &__form{
+        font-size: 1.8rem;
+        font-weight: 700;
+        height: 6.7rem;
+        &--contact{
+            width: 26.5rem;
+    
+            @include respond(tab-break){
+                font-size: 2.13rem;
+            }
+        }
+    
+        &--login{
+            width: 100%;
+    
+            @include respond(tab-break){
+                font-size: 2.13rem;
+            }
+
+            @include respond(phone-break){
+                width: 60%;
+                margin: 0 auto;
+            }
+        }
+    }
+}
