@@ -27,5 +27,8 @@
                 {% include "partials/footer.php" %}
             {% endblock %}
         </section>
+
+        <script src="js/app.js"></script>
+
     </body>
 </html>
