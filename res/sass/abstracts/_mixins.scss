@@ -1,0 +1,29 @@
+// MEDIA QUERY MANAGER
+/*
+
+$breakpoint arguement choices:
+- phone-break
+- tab-break
+
+*/
+@mixin respond($breakpoint) {
+    // @if $breakpoint == phone-s-break {
+    //     @media only screen and (max-width: 375px) { @content };  
+    // }
+    // @if $breakpoint == phone-m-break {
+    //     @media only screen and (max-width: 468px) { @content };  
+    // }
+    @if $breakpoint == phone-break {
+        @media only screen and (max-width: 568px) { @content };  
+    }
+    @if $breakpoint == tab-break {
+        @media only screen and (max-width: 768px) { @content };   
+    }
+    @if $breakpoint == laptop-break {
+        @media only screen and (min-width: 1440px) { @content };   
+    }
+    // @if $breakpoint == desktop-break {
+    //     @media only screen and (min-width: 1920px) { @content };   
+    // }
+}
+

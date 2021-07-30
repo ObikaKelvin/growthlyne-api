@@ -1,0 +1,169 @@
+.offer-section{
+    padding: 11.6rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $blue;
+    color: $white;
+    position: relative;
+
+    &-index .offer__item .offer__text{
+        @include respond(tab-break){
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        @include respond(phone-break){
+            width: 81%;
+        }
+        
+    }
+    
+    &-white{
+        background-color: $white;
+        color: $black;
+    }
+    
+    &-course{
+        background-color: $blue-1;
+        color: $white;
+        padding: 11.6rem 0 17rem 0;
+    }
+
+    @include respond(tab-break){
+        padding: 9.0rem 0;
+    }
+
+    @include respond(phone-break){
+        padding: 9.0rem 0;
+    }
+}
+
+
+.offer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__img{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background-position: center;
+        background-size: cover;
+
+        & > img{
+            width: 100%;
+            height: auto;
+        }
+
+        &--1{
+            width: 141.8rem;
+            height: 55.1rem;
+
+            & > img{
+                width: inherit;
+                height: inherit;
+            }
+
+            @include respond(tab-break){
+                width: 69.8rem;
+                height: 33.5rem;
+            }
+
+            @include respond(phone-break){
+                width: 52.8rem;
+                height: 28.4rem;
+            }
+        }
+    }
+
+    &__item{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+
+        &:not(:last-of-type){
+            margin-bottom: 6.0rem;
+            
+            @include respond(tab-break){
+                margin-bottom: 4.0rem;
+            }
+
+        }
+
+        &--icon{
+            width: 3.2rem;
+            height: 3.2rem;
+            margin-right: 3.0rem;
+            margin-top: 1.0rem;
+        }
+    }
+
+    &__text{
+        width: 92.9rem;
+        text-transform: capitalize;
+
+        @include respond(tab-break){
+            width: 51.7rem;
+            &:last-child{
+                margin-bottom: 5.0rem;
+            }
+        }
+
+        @include respond(phone-break){
+            font-size: 2.4rem;
+        }
+
+        &--sm{
+            font-size: 2.6rem;
+
+            @include respond(tab-break){
+                font-size: 1.8rem;
+            }
+        }
+
+        &--footer{
+            font-size: 2.4rem;
+        }
+    }
+
+    &__btn{
+        
+    }
+
+    &__btn--full{
+        width: 92.9rem;
+        @include respond(tab-break){
+            width: 51.5rem;
+        }
+    }
+
+    &__testimonial{
+        display: flex;
+        position: relative;
+        padding: 13.0rem 0;
+
+        @include respond(tab-break){
+            padding: 13.0rem 0 9.5rem 0;
+        }
+
+        @include respond(phone-break){
+            width: 100%;
+            overflow-x: hidden;
+            justify-content: center;
+            padding: 1.3rem 0 7.0rem 0;
+        }
+    }
+
+    @include respond(tab-break){
+        margin-top: 6.3rem;
+    }
+
+    @include respond(phone-break){
+        margin-top: 0;
+    }
+}

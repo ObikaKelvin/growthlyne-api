@@ -27,41 +27,43 @@
 
                 <div class="list discover__list">
                     <div class="list__item">
-                        <object class="list__icon list__icon--discover list__icon--md" data="/svg/Subtract.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad list__icon list__icon--discover list__icon--md" data-src="/svg/Subtract.svg" data-alt="list icon">
                         <div class="list__content--discover">
                             <span class="discover__text"> Land High-Quality Clients Who Won’t Mind Paying You More (And Will Give You Fewer Headaches.) </span>
                         </div>
                     </div>
                     <div class="list__item">
-                        <object class="list__icon list__icon--discover list__icon--md" data="/svg/Subtract.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad list__icon list__icon--discover list__icon--md" data-src="/svg/Subtract.svg" data-alt="list icon">
                         <div class="list__content--discover">
                             <span class="discover__text"> Get More Consistent High-Paying Work From Different Reliable Sources -- And Never Worry About Where Your Next Project Is Coming From. </span>
                         </div>
                     </div>
 
                     <div class="list__item">
-                        <object class="list__icon list__icon--discover list__icon--md" data="/svg/Subtract.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad list__icon list__icon--discover list__icon--md" data-src="/svg/Subtract.svg" data-alt="list icon">
                         <div class="list__content--discover">
                             <span class="discover__text"> Build An Unstoppable 6-Figure Business That Will Take Less Time To Run And Will Always Predictably Produce Income (Forget About The Dreaded “feast Or Famine” Grind.) </span>
                         </div>
                     </div>
 
                     <div class="list__item">
-                        <object class="list__icon list__icon--discover list__icon--md" data="/svg/Subtract.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad list__icon list__icon--discover list__icon--md" data-src="/svg/Subtract.svg" data-alt="list icon">
                         <div class="list__content--discover">
                             <span class="discover__text"> Be The Proud Owner Of A True Freelancing Business That Runs Smoothly -- And Will Also Allow You Also To Enjoy Your Life. </span>
                         </div>
                     </div>
 
                     <div class="list__item">
-                        <object class="list__icon list__icon--discover list__icon--md" data="/svg/Subtract.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad list__icon list__icon--discover list__icon--md" data-src="/svg/Subtract.svg" data-alt="list icon">
                         <div class="list__content--discover">
                             <span class="discover__text"> Get Paid What You Deserve For Your Gigs Instead Of Hustling And Working Day And Night For Peanuts. </span>
+                        </div>
+                    </div>
+
+                    <div class="list__item">
+                        <img class="lozad list__icon list__icon--discover list__icon--md" data-src="/svg/Subtract.svg" data-alt="list icon">
+                        <div class="list__content--discover">
+                            <span class="discover__text"> And Much More...  </span>
                         </div>
                     </div>
                 </div>
@@ -84,7 +86,10 @@
                 <div class="card__course--footer flex flex-d-column align-center">
                     <p class="paragraph__sm paragraph__sm--1 t--black t--bold">A Special Message From:</p>
 
-                    <img src="pictures/course-testimonial.webp" class="card__course--img" alt="" srcset="">
+                    <picture class="lozad card__course--img">
+                        <source media="(min-width:1440px)" srcset="pictures/course-testimonial.webp">
+                        <source media="(min-width:768px)" srcset="pictures/course-testimonial-phone.webp">
+                    </picture>
 
                     <p class="paragraph__sm paragraph__sm--1 t--bold t--red">Sergio Romero, Marketer</p>
                 </div>
@@ -105,34 +110,30 @@
 
                 <div class="list knowledge__list">
                     <div class="list__item list__item--knowledge">
-                        <object class="list__icon list__icon--sm" data="/svg/Cross.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad list__icon list__icon--sm" data-src="/svg/Cross.svg" data-alt="list icon">
                         <div class="list__content--knowledge">
                             <span class="paragraph__sm paragraph__sm--2"> Dealing with low-quality clients who want the world for nothing... </span>
                         </div>
                     </div>
 
                     <div class="list__item list__item--knowledge">
-                        <object class="list__icon list__icon--sm" data="/svg/Cross.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad list__icon list__icon--sm" data-src="/svg/Cross.svg" data-alt="list icon">
                         <div class="list__content--knowledge">
                             <span class="paragraph__sm paragraph__sm--2"> A workflow that pays the bills, but could be FAR bigger. </span>
                         </div>
                     </div>
 
                     <div class="list__item list__item--knowledge">
-                        <object class="list__icon list__icon--sm" data="/svg/Cross.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad list__icon list__icon--sm" data-src="/svg/Cross.svg" data-alt="list icon">
                         <div class="list__content--knowledge">
                             <span class="paragraph__sm paragraph__sm--2"> The “feast or famine” mode where there are periods where you barely get projects... </span>
                         </div>
                     </div>
 
                     <div class="list__item list__item--knowledge">
-                        <object class="list__icon list__icon--sm" data="/svg/Cross.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad list__icon list__icon--sm" data-src="/svg/Cross.svg" data-alt="list icon">
                         <div class="list__content--knowledge">
-                            <span class="paragraph__sm paragraph__sm--2"> Feeling confused as to why your business is not where you want it to be? </span>
+                            <span class="paragraph__sm paragraph__sm--2"> Feeling frustrated because your business is not where you want it to be? </span>
                         </div>
                     </div>
                 </div>
@@ -184,15 +185,16 @@
             </div>
         </div>
 
-        <picture>
+        <picture class="lozad offer__img--1">
             <source media="(min-width:1440px)" srcset="pictures/screens-img.webp">
             <source media="(min-width:768px)" srcset="pictures/screens-img-tab.webp">
             <source media="(min-width:568px)" srcset="pictures/screens-img-phone.webp">
-            <img src="pictures/screens-img.webp" class="offer__img--1" alt="screens" loading="lazy">
+            <source media="(max-width:568px)" srcset="pictures/screens-img-phone.webp">
         </picture>
 
         <div class="container">
-            <p class="paragraph__md paragraph__md--1 blueprint__text--full">The <span class="t--red t--bold">[Insert Name Of Course Here]</span> is a step-by-step, do-this-do-that program where I reveal <span class="t--bold">tested-in-the-field</span> methods that are proven to work. If you already are a freelancer who’d like to get more high-quality clients and achieve a predictable, regular cash flow with a long-lasting freelancing business, this blueprint is precisely what you need.</p>
+            <p class="paragraph__md paragraph__md--1 blueprint__text--full">The <span class="t--red t--bold">[Insert Name Of Course Here]</span> is a step-by-step, do-this-do-that program where I reveal <span class="t--bold">tested-in-the-field</span> methods that are proven to work for freelancers who just got started or are already working for a “meh” rate.</p>
+            <p class="paragraph__md paragraph__md--1 blueprint__text--full">If you’d like to get more high-quality clients and achieve a predictable, regular cash flow with a long-lasting freelancing business, this blueprint is precisely what you need.</p>
 
             <p class="t--semibold paragraph__sm blueprint__text">I Hold Nothing Back And Show You A 5-Step Approach That Will Get You The Jaw-Dropping Results You’re After.</p>
         </div>
@@ -212,8 +214,7 @@
                     <p class="steps__text paragraph__sm">Each Of These Will Help You Determine Which Direction You Want To Follow, And Pave The Way To A <span class="t--bold">Super-Successful, Proper Freelance Business.</span> </p>
                 </div>
 
-                <object class="steps__art" data="/svg/steps1.svg" type="image/svg+xml">
-                </object>
+                <img class="lozad steps__art" data-src="/svg/steps1.svg" data-alt="steps">
             </div>
 
             <div class="steps__item steps__item--1">
@@ -226,8 +227,7 @@
                     <p class="steps__text paragraph__sm">Now, you’ll also learn the necessary easy steps to build an attractive portfolio that doesn’t take forever to create and that will attract clients and get them interested in you and your services.</p>
                 </div>
 
-                <object class="steps__art" data="/svg/steps2.svg" type="image/svg+xml">
-                </object>
+                <img class="lozad steps__art" data-src="/svg/steps2.svg" data-alt="steps">
             </div>
 
             <div class="steps__item steps__item--1">
@@ -239,8 +239,7 @@
                     <p class="steps__text paragraph__sm"><u>You’ll generate clients on-demand and be able to make money -- every month.</u></p>
                 </div>
 
-                <object class="steps__art" data="/svg/steps3.svg" type="image/svg+xml">
-                </object>
+                <img class="lozad steps__art" data-src="/svg/steps3.svg" data-alt="steps">
             </div>
 
             <div class="steps__item steps__item--1">
@@ -257,8 +256,7 @@
                     <p class="steps__text paragraph__sm">It’s time to unleash what you always wanted: <span class="t--u">TRUE</span> financial freedom!</p>
                 </div>
 
-                <object class="steps__art" data="/svg/steps4.svg" type="image/svg+xml">
-                </object>
+                <img class="lozad steps__art" data-src="/svg/steps4.svg" data-alt="steps">
             </div>
 
             <div class="steps__item steps__item--1">
@@ -273,8 +271,7 @@
                     <p class="steps__text paragraph__sm">Now, this is my vision of success!</p>
                 </div>
 
-                <object class="steps__art" data="/svg/steps5.svg" type="image/svg+xml">
-                </object>
+                <img class="lozad steps__art" data-src="/svg/steps5.svg" data-alt="steps">
             </div>
         </div>
 
@@ -284,30 +281,27 @@
         <h2 class="freelancers__heading heading heading__quote">There Are Two Different Types Of Freelancers...</h2>
 
         <div class="steps__list">
-            <div class="steps__item steps__item--2">
+            <div class="steps__item steps__item--freelancer">
                 <div class="steps__paragraph">
                     <p class="steps__sub paragraph__md paragraph__md--2 t--bitter t--bold paragraph__md paragraph__md--1">The first type is doing well and enjoying a state of semi-success.</p>
                     
                     <div class="list">
                         <div class="list__item list__item--freelancers">
-                            <object class="list__icon list__icon--md" data="/svg/Cross.svg" type="image/svg+xml">
-                            </object>
+                            <img class="lozad list__icon list__icon--md" data-src="/svg/Cross.svg" data-alt="list icon">
                             <div class="list__content--freelancers">
                                 <span class="freelancers__text paragraph__sm paragraph__sm--1"> They’re able to generate clients, but most of the time these are difficult to work with and always asking for too much. </span>
                             </div>
                         </div>
 
                         <div class="list__item list__item--freelancers">
-                            <object class="list__icon list__icon--md" data="/svg/Cross.svg" type="image/svg+xml">
-                            </object>
+                            <img class="lozad list__icon list__icon--md" data-src="/svg/Cross.svg" data-alt="list icon">
                             <div class="list__content--freelancers">
                                 <span class="freelancers__text paragraph__sm paragraph__sm--1"> Also, one of the big problems for them is the inability to <u>take things to the next level</u> and unlock their true potential to earn much more… </span>
                             </div>
                         </div>
 
                         <div class="list__item list__item--freelancers">
-                            <object class="list__icon list__icon--md" data="/svg/Cross.svg" type="image/svg+xml">
-                            </object>
+                            <img class="lozad list__icon list__icon--md" data-src="/svg/Cross.svg" data-alt="list icon">
                             <div class="list__content--freelancers">
                                 <span class="freelancers__text paragraph__sm paragraph__sm--1"> In short, they’re constantly feeling stuck and not being able to move forward.</span>
                             </div>
@@ -315,39 +309,36 @@
                     </div>
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/first-freelancer.png">
-                    <source media="(min-width:768px)" srcset="pictures/first-freelancer.png">
-                    <source media="(min-width:568px)" srcset="pictures/first-freelancer.png">
-                    <img class="steps__img" src="pictures/first-freelancer.png" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img">
+                    <source media="(min-width:1440px)" srcset="pictures/first-freelancer.webp">
+                    <source media="(min-width:768px)" srcset="pictures/first-freelancer-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/first-freelancer-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/first-freelancer-phone.webp">
                 </picture>
             </div>
 
-            <div class="steps__item steps__item--2">
+            <div class="steps__item steps__item--freelancer">
 
                 <div class="steps__paragraph">
-                    <p class="steps__sub paragraph__md paragraph__md--2 t--bitter t--bold paragraph__md paragraph__md--1">The Second type is doing well and enjoying a state of semi-success.</p>
+                    <p class="steps__sub t--bitter t--bold">The Second type is doing well and enjoying a state of semi-success.</p>
                     
                     <div class="list">
                         <div class="list__item list__item--freelancers">
-                            <object class="list__icon list__icon--md" data="/svg/Subtract.svg" type="image/svg+xml">
-                            </object>
+                            <img class="lozad list__icon list__icon--md" data-src="/svg/Subtract.svg" data-alt="list icon">
                             <div class="list__content--freelancers">
                                 <span class="freelancers__text paragraph__sm paragraph__sm--1"> They’re ambitious, sharp, and savvy individuals who run a BUSINESS that’s rewarding and doesn’t suck up all of their time. </span>
                             </div>
                         </div>
 
                         <div class="list__item list__item--freelancers">
-                            <object class="list__icon list__icon--md" data="/svg/Subtract.svg" type="image/svg+xml">
-                            </object>
+                            <img class="lozad list__icon list__icon--md" data-src="/svg/Subtract.svg" data-alt="list icon">
                             <div class="list__content--freelancers">
                                 <span class="freelancers__text paragraph__sm paragraph__sm--1"> They work with top-class and high-quality clients who pay more and don’t give them problems, plus... </span>
                             </div>
                         </div>
 
                         <div class="list__item list__item--freelancers">
-                            <object class="list__icon list__icon--md" data="/svg/Subtract.svg" type="image/svg+xml">
-                            </object>
+                            <img class="lozad list__icon list__icon--md" data-src="/svg/Subtract.svg" data-alt="list icon">
                             <div class="list__content--freelancers">
                                 <span class="freelancers__text paragraph__sm paragraph__sm--1 t--bold"> They work less, sleep better at night, and enjoy life while avoiding falling prey to low-quality clients who are a total nightmare. </span>
                             </div>
@@ -355,11 +346,11 @@
                     </div>
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/second-freelancer.png">
-                    <source media="(min-width:768px)" srcset="pictures/second-freelancer.png">
-                    <source media="(min-width:568px)" srcset="pictures/second-freelancer.png">
-                    <img class="steps__img" src="pictures/second-freelancer.png" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img">
+                    <source media="(min-width:1440px)" srcset="pictures/second-freelancer.webp">
+                    <source media="(min-width:768px)" srcset="pictures/second-freelancer-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/second-freelancer-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/second-freelancer-phone.webp">
                 </picture>
             </div>
         </div>
@@ -376,11 +367,11 @@
                     
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/step1.jpg">
-                    <source media="(min-width:768px)" srcset="pictures/step1.jpg">
-                    <source media="(min-width:568px)" srcset="pictures/step1.jpg">
-                    <img class="steps__img--sm" src="pictures/step1.jpg" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img--sm">
+                    <source media="(min-width:1440px)" srcset="pictures/step1.webp">
+                    <source media="(min-width:768px)" srcset="pictures/step1-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/step1-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/step1-phone.webp">
                 </picture>
             </div>
 
@@ -391,11 +382,11 @@
                     <p class="steps__sub paragraph__md paragraph__md--2"> Two Little-Known Yet Highly-Effective Techniques That Very Few Use That Will Help You Validate Any Skill To See Whether It Can Make You Money Or Not. If It’s Profitable, You Can Learn It And Sell It In Record Time.</p>
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/step2.jpg">
-                    <source media="(min-width:768px)" srcset="pictures/step2.jpg">
-                    <source media="(min-width:568px)" srcset="pictures/step2.jpg">
-                    <img class="steps__img--sm" src="pictures/step1.jpg" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img--sm">
+                    <source media="(min-width:1440px)" srcset="pictures/step2.webp">
+                    <source media="(min-width:768px)" srcset="pictures/step2-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/step2-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/step2-phone.webp">
                 </picture>
             </div>
 
@@ -406,11 +397,11 @@
                     
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/step1.jpg">
-                    <source media="(min-width:768px)" srcset="pictures/step1.jpg">
-                    <source media="(min-width:568px)" srcset="pictures/step1.jpg">
-                    <img class="steps__img--sm" src="pictures/step1.jpg" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img--sm">
+                    <source media="(min-width:1440px)" srcset="pictures/step1.webp">
+                    <source media="(min-width:768px)" srcset="pictures/step1-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/step1-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/step1-phone.webp">
                 </picture>
             </div>
 
@@ -421,11 +412,11 @@
                     <p class="steps__sub paragraph__md paragraph__md--2"> From Them. I’ll Show You Exactly The Ins And Outs Of How To Write Top-Notch Proposals, Charge The Right <span class="text__red--bold">Price, Deal With Clients, And Much, Much More!</span> </p>
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/step2.jpg">
-                    <source media="(min-width:768px)" srcset="pictures/step2.jpg">
-                    <source media="(min-width:568px)" srcset="pictures/step2.jpg">
-                    <img class="steps__img--sm" src="pictures/step1.jpg" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img--sm">
+                    <source media="(min-width:1440px)" srcset="pictures/step2.webp">
+                    <source media="(min-width:768px)" srcset="pictures/step2-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/step2-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/step2-phone.webp">
                 </picture>
             </div>
 
@@ -436,11 +427,11 @@
                     
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/step1.jpg">
-                    <source media="(min-width:768px)" srcset="pictures/step1.jpg">
-                    <source media="(min-width:568px)" srcset="pictures/step1.jpg">
-                    <img class="steps__img--sm" src="pictures/step1.jpg" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img--sm">
+                    <source media="(min-width:1440px)" srcset="pictures/step1.webp">
+                    <source media="(min-width:768px)" srcset="pictures/step1-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/step1-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/step1-phone.webp">
                 </picture>
             </div>
 
@@ -451,11 +442,11 @@
                     <p class="steps__sub paragraph__md paragraph__md--2"> plus the game plan to build a high-converting website that will get you as many high-paying clients as you can handle!</p>
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/step2.jpg">
-                    <source media="(min-width:768px)" srcset="pictures/step2.jpg">
-                    <source media="(min-width:568px)" srcset="pictures/step2.jpg">
-                    <img class="steps__img--sm" src="pictures/step1.jpg" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img--sm">
+                    <source media="(min-width:1440px)" srcset="pictures/step2.webp">
+                    <source media="(min-width:768px)" srcset="pictures/step2-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/step2-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/step2-phone.webp">
                 </picture>
             </div>
 
@@ -466,11 +457,11 @@
                     
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/step1.jpg">
-                    <source media="(min-width:768px)" srcset="pictures/step1.jpg">
-                    <source media="(min-width:568px)" srcset="pictures/step1.jpg">
-                    <img class="steps__img--sm" src="pictures/step1.jpg" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img--sm">
+                    <source media="(min-width:1440px)" srcset="pictures/step1.webp">
+                    <source media="(min-width:768px)" srcset="pictures/step1-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/step1-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/step1-phone.webp">
                 </picture>
             </div>
 
@@ -481,11 +472,11 @@
                     <p class="steps__sub paragraph__md paragraph__md--2"> plus -- the right way to use directories as your personal “client-generating machine.” </p>
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/step2.jpg">
-                    <source media="(min-width:768px)" srcset="pictures/step2.jpg">
-                    <source media="(min-width:568px)" srcset="pictures/step2.jpg">
-                    <img class="steps__img--sm" src="pictures/step1.jpg" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img--sm">
+                    <source media="(min-width:1440px)" srcset="pictures/step2.webp">
+                    <source media="(min-width:768px)" srcset="pictures/step2-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/step2-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/step2-phone.webp">
                 </picture>
             </div>
 
@@ -496,11 +487,11 @@
                     
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/step1.jpg">
-                    <source media="(min-width:768px)" srcset="pictures/step1.jpg">
-                    <source media="(min-width:568px)" srcset="pictures/step1.jpg">
-                    <img class="steps__img--sm" src="pictures/step1.jpg" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img--sm">
+                    <source media="(min-width:1440px)" srcset="pictures/step1.webp">
+                    <source media="(min-width:768px)" srcset="pictures/step1-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/step1-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/step1-phone.webp">
                 </picture>
             </div>
 
@@ -511,11 +502,11 @@
                     <p class="steps__sub paragraph__md paragraph__md--2"> you’ll know exactly what to do in every single moment. No more guesswork and wandering in the dark, not knowing what the next step might be.</p>
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/step2.jpg">
-                    <source media="(min-width:768px)" srcset="pictures/step2.jpg">
-                    <source media="(min-width:568px)" srcset="pictures/step2.jpg">
-                    <img class="steps__img--sm" src="pictures/step1.jpg" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img--sm">
+                    <source media="(min-width:1440px)" srcset="pictures/step2.webp">
+                    <source media="(min-width:768px)" srcset="pictures/step2-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/step2-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/step2-phone.webp">
                 </picture>
             </div>
 
@@ -526,11 +517,11 @@
                     
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/step1.jpg">
-                    <source media="(min-width:768px)" srcset="pictures/step1.jpg">
-                    <source media="(min-width:568px)" srcset="pictures/step1.jpg">
-                    <img class="steps__img--sm" src="pictures/step1.jpg" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img--sm">
+                    <source media="(min-width:1440px)" srcset="pictures/step1.webp">
+                    <source media="(min-width:768px)" srcset="pictures/step1-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/step1-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/step1-phone.webp">
                 </picture>
             </div>
 
@@ -541,11 +532,11 @@
                     <p class="steps__sub paragraph__md paragraph__md--2"> I’ll show you how you can be even MORE successful with your own agency -- an unstoppable machine that will put you on a whole different another level. You’ll learn -- step-by-step -- how to create a super successful agency.</p>
                 </div>
 
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/step2.jpg">
-                    <source media="(min-width:768px)" srcset="pictures/step2.jpg">
-                    <source media="(min-width:568px)" srcset="pictures/step2.jpg">
-                    <img class="steps__img--sm" src="pictures/step1.jpg" alt="login-img" loading="lazy">
+                <picture class="lozad steps__img--sm">
+                    <source media="(min-width:1440px)" srcset="pictures/step2.webp">
+                    <source media="(min-width:768px)" srcset="pictures/step2-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/step2-phone.webp">
+                    <source media="(max-width:568px)" srcset="pictures/step2-phone.webp">
                 </picture>
             </div>
 
@@ -554,7 +545,7 @@
 
    
     <section id="section-planning">
-        <div class="steps__item steps__item--1 steps__item--planning">
+        <div class="steps__item steps__item--planning">
 
             <div class="steps__paragraph steps__paragraph--planning">
                 <p class="steps__title--sub steps__title--planning">Whether you’re in the learning/planning phase... </p>
@@ -563,12 +554,13 @@
                 <p class="paragraph__bg t--bold t--bitter planning__text--bg"> This is just the tip of the iceberg because there’s much more!</p>
             </div>
 
-            <picture class="steps__img steps__img--lg">
-                <source media="(min-width:1440px)" srcset="pictures/image.png">
-                <source media="(min-width:768px)" srcset="pictures/image.png">
-                <source media="(min-width:568px)" srcset="pictures/image.png">
-                <img class="steps__img steps__img--lg" src="pictures/image.png" alt="login-img" loading="lazy">
+            <picture class="lozad steps__img steps__img--lg">
+                <source media="(min-width:1440px)" srcset="pictures/image.webp">
+                <source media="(min-width:768px)" srcset="pictures/image-tab.webp">
+                <source media="(min-width:568px)" srcset="pictures/image-phone.webp">
+                <source media="(max-width:568px)" srcset="pictures/image-phone.webp">
             </picture>
+            
         </div>
     </section>
 
@@ -583,8 +575,7 @@
                 <p class="actionable__text paragraph paragraph__md paragraph__md--2 t--center text__underline">I chose a different route because I decided to condense all of my experience in a 5-star course that will show you everything you need to know to take you and your freelance career to the new heights.</p>
                 <div class="list">
                     <div class="list__item list__item--actionable">
-                        <object class="list__icon list__icon--md" data="/svg/cross.svg" type="image/svg+xml">
-                        </object>    
+                        <img class="lozad list__icon list__icon--md" data-src="/svg/cross.svg" data-alt="list icon">
                         <div class="list__text">
                             <span class="paragraph__md paragraph__md--2 t--center">And make no mistake…</span>
                         </div>
@@ -606,7 +597,12 @@
 
                 <div class="course-testimonial__card">
                     <div class="course-testimonial__card--left">
-                        <img src="pictures/Ellipse5.jpg" class="course-testimonial__img" alt="user" srcset="">
+                        <picture class="lozad course-testimonial__img">
+                            <source media="(min-width:1440px)" srcset="pictures/Ellipse5.webp">
+                            <source media="(min-width:768px)" srcset="pictures/Ellipse5-tab.webp">
+                            <source media="(min-width:568px)" srcset="pictures/Ellipse5-phone.webp">
+                            <source media="(max-width:568px)" srcset="pictures/Ellipse5-phone.webp">
+                        </picture>
                     </div>
                     <div class="course-testimonial__card--right">
                         <p class="course-testimonial__card--review"><span class="t--red t--bold">“</span> The system is fantastic to get clients and grow your network in a very organic way without being spammy. I know my business is going to change for the better if I do the work and step a little out of my comfort zone.</p>
@@ -615,14 +611,19 @@
                             <div class="course-testimonial__card--user">
                                 <p class="paragraph__sm paragraph__sm--1 t--red t--bold">Sergio Romero, Marketer</p>
                             </div>
-                            <object class="course-testimonial__card--rating" data="/svg/stars.svg" type="image/svg+xml"></object>
+                            <img class="lozad course-testimonial__card--rating" data-src="/svg/stars.svg" data-alt="ratings">    
                         </div>
                     </div>
                 </div>
 
                 <div class="course-testimonial__card">
                     <div class="course-testimonial__card--left">
-                        <img src="pictures/Ellipse6.jpg" class="course-testimonial__img" alt="user" srcset="">
+                        <picture class="lozad course-testimonial__img">
+                            <source media="(min-width:1440px)" srcset="pictures/Ellipse6.webp">
+                            <source media="(min-width:768px)" srcset="pictures/Ellipse6-tab.webp">
+                            <source media="(min-width:568px)" srcset="pictures/Ellipse6-phone.webp">
+                            <source media="(max-width:568px)" srcset="pictures/Ellipse6-phone.webp">
+                        </picture>
                     </div>
                     <div class="course-testimonial__card--right">
                         <p class="course-testimonial__card--review"><span class="t--red t--bold">“</span> The system is fantastic to get clients and grow your network in a very organic way without being spammy. I know my business is going to change for the better if I do the work and step a little out of my comfort zone.</p>
@@ -631,14 +632,19 @@
                             <div class="course-testimonial__card--user">
                                 <p class="paragraph__sm paragraph__sm--1 t--red t--bold">Sergio Romero, Marketer</p>
                             </div>
-                            <object class="course-testimonial__card--rating" data="/svg/stars.svg" type="image/svg+xml"></object>
+                            <img class="lozad course-testimonial__card--rating" data-src="/svg/stars.svg" data-alt="ratings">    
                         </div>
                     </div>
                 </div>
 
                 <div class="course-testimonial__card">
                     <div class="course-testimonial__card--left">
-                        <img src="pictures/Ellipse3.jpg" class="course-testimonial__img" alt="user" srcset="">
+                        <picture class="lozad course-testimonial__img">
+                            <source media="(min-width:1440px)" srcset="pictures/Ellipse3.webp">
+                            <source media="(min-width:768px)" srcset="pictures/Ellipse3-tab.webp">
+                            <source media="(min-width:568px)" srcset="pictures/Ellipse3-phone.webp">
+                            <source media="(max-width:568px)" srcset="pictures/Ellipse3-phone.webp">
+                        </picture>
                     </div>
                     <div class="course-testimonial__card--right">
                         <p class="course-testimonial__card--review"><span class="t--red t--bold">“</span> The system is fantastic to get clients and grow your network in a very organic way without being spammy. I know my business is going to change for the better if I do the work and step a little out of my comfort zone.</p>
@@ -647,14 +653,19 @@
                             <div class="course-testimonial__card--user">
                                 <p class="paragraph__sm paragraph__sm--1 t--red t--bold">Sergio Romero, Marketer</p>
                             </div>
-                            <object class="course-testimonial__card--rating" data="/svg/stars.svg" type="image/svg+xml"></object>
+                            <img class="lozad course-testimonial__card--rating" data-src="/svg/stars.svg" data-alt="ratings">    
                         </div>
                     </div>
                 </div>
 
                 <div class="course-testimonial__card">
                     <div class="course-testimonial__card--left">
-                        <img src="pictures/Ellipse4.jpg" class="course-testimonial__img" alt="user" srcset="">
+                        <picture class="lozad course-testimonial__img">
+                            <source media="(min-width:1440px)" srcset="pictures/Ellipse4.webp">
+                            <source media="(min-width:768px)" srcset="pictures/Ellipse4-tab.webp">
+                            <source media="(min-width:568px)" srcset="pictures/Ellipse4-phone.webp">
+                            <source media="(max-width:568px)" srcset="pictures/Ellipse4-phone.webp">
+                        </picture>
                     </div>
                     <div class="course-testimonial__card--right">
                         <p class="course-testimonial__card--review"><span class="t--red t--bold">“</span> The system is fantastic to get clients and grow your network in a very organic way without being spammy. I know my business is going to change for the better if I do the work and step a little out of my comfort zone.</p>
@@ -663,7 +674,7 @@
                             <div class="course-testimonial__card--user">
                                 <p class="paragraph__sm paragraph__sm--1 t--red t--bold">Sergio Romero, Marketer</p>
                             </div>
-                            <object class="course-testimonial__card--rating" data="/svg/stars.svg" type="image/svg+xml"></object>
+                            <img class="lozad course-testimonial__card--rating" data-src="/svg/stars.svg" data-alt="ratings">    
                         </div>
                     </div>
                 </div>
@@ -680,40 +691,35 @@
                 <div class="cvn">
                     <div class="list">  
                         <div class="list__item cvn__item">
-                            <object class="list__icon list__icon--sm" data="/svg/Subtract.svg" type="image/svg+xml">
-                            </object>
+                            <img class="lozad list__icon list__icon--sm" data-src="/svg/Subtract.svg" data-alt="list icon">
                             <div class="cvn__text">
                                 <span class="paragraph__sm paragraph__sm--3"> <span class="t--bold">How you can stand out from your competitors and get clients to go ONLY with you:</span> I’ll show you some tricks that’ll give you an unfair advantage over other struggling freelancers. </span>
                             </div>
                         </div>
 
                         <div class="list__item cvn__item">
-                            <object class="list__icon list__icon--sm" data="/svg/Subtract.svg" type="image/svg+xml">
-                            </object>
+                            <img class="lozad list__icon list__icon--sm" data-src="/svg/Subtract.svg" data-alt="list icon">
                             <div class="cvn__text">
                                 <span class="paragraph__sm paragraph__sm--3"> <span class="t--bold">The secret way to double or triple your rates</span>: The right way to exponentially increasing your bottom line and making you look like “the real deal.”</span>
                             </div>
                         </div>
 
                         <div class="list__item cvn__item">
-                            <object class="list__icon list__icon--sm" data="/svg/Subtract.svg" type="image/svg+xml">
-                            </object>
+                            <img class="lozad list__icon list__icon--sm" data-src="/svg/Subtract.svg" data-alt="list icon">
                             <div class="cvn__text">
                                 <span class="paragraph__sm paragraph__sm--3"> <span class="t--bold">You’ll learn how to avoid the “vampire clients”</span> that are not worth your time and will only drain your energy and your profits. </span>
                             </div>
                         </div>
 
                         <div class="list__item cvn__item">
-                            <object class="list__icon list__icon--sm" data="/svg/Subtract.svg" type="image/svg+xml">
-                            </object>
+                            <img class="lozad list__icon list__icon--sm" data-src="/svg/Subtract.svg" data-alt="list icon">
                             <div class="cvn__text">
                                 <span class="paragraph__sm paragraph__sm--3"> <span class="t--bold">Are you stuck in the “feast or famine” state? No worries. It’s something that we’ve all been through.</span> Learn the fastest way to avoid that and double or even triple your current income.</span>
                             </div>
                         </div>
 
                         <div class="list__item cvn__item">
-                            <object class="list__icon list__icon--sm" data="/svg/Subtract.svg" type="image/svg+xml">
-                            </object>
+                            <img class="lozad list__icon list__icon--sm" data-src="/svg/Subtract.svg" data-alt="list icon">
                             <div class="cvn__text">
                                 <span class="paragraph__sm paragraph__sm--3"> <span class="t--bold">You should follow a smart, unconventional system if you want to make good money and have a life as a freelancer.</span> There’s no point in making lots of money if you’re slaving away at your monitor and locked in your dungeon 17 hours a day. </span>
                             </div>
@@ -721,11 +727,11 @@
 
                     </div>
 
-                    <picture>
-                        <source media="(min-width:1440px)" srcset="pictures/reason-join.jpg">
-                        <source media="(min-width:768px)" srcset="pictures/reason-join.jpg">
-                        <source media="(min-width:568px)" srcset="pictures/reason-join.jpg">
-                        <img class="cvn__img" src="pictures/reason-join.jpg" alt="login-img" loading="lazy">
+                    <picture class="lozad cvn__img" data-alt="steps">
+                        <source media="(min-width:1440px)" srcset="pictures/reason-join.webp">
+                        <source media="(min-width:768px)" srcset="pictures/reason-join-tab.webp">
+                        <source media="(min-width:568px)" srcset="pictures/reason-join-tab.webp">
+                        <source media="(max-width:568px)" srcset="pictures/reason-join-tab.webp">
                     </picture>
                 </div>
                 
@@ -737,11 +743,11 @@
         <div class="container container__pad">
             <div class="double-decker">
                 <h4 class="double-decker__heading heading heading__course">My Double-Decker, Love-It-Or-Hate-It 30-Day Money-Back Guarantee. Either You Love This, Or Your Money Back.</h4>
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/Group 77.png">
-                    <source media="(min-width:768px)" srcset="pictures/Group 77.png">
-                    <source media="(min-width:568px)" srcset="pictures/Group 77.png">
-                    <img class="double-decker__img" src="pictures/Group 77.png" alt="hero-img" loading="lazy">
+                
+                <picture class="lozad double-decker__img" data-alt="guaranty">
+                    <source media="(min-width:1440px)" srcset="pictures/Group-77.webp">
+                    <source media="(min-width:768px)" srcset="pictures/Group-77.webp">
+                    <source media="(min-width:568px)" srcset="pictures/Group-77.webp">
                 </picture>
                 
                 <p class="double-decker__text--full">Here’s the thing... <br> I’d like you to try <span class="text__red t--bold">[Insert Name Of Your Course Here]</span> <span class="t--bold"><span class="text__underline">RISK-FREE.</span></span></p>
@@ -764,25 +770,67 @@
     </section>
 
     <section id="action-time">
+        <div class="action-time__overlay"></div>
+        <picture class="lozad action-time__img">
+            <source media="(min-width:1440px)" srcset="pictures/Rectangle-38.webp">
+            <source media="(min-width:768px)" srcset="pictures/Rectangle-38-tab.webp">
+            <source media="(min-width:568px)" srcset="pictures/Rectangle-38-phone.webp">
+            <source media="(max-width:568px)" srcset="pictures/Rectangle-38-phone.webp">
+        </picture>
+
         <div class="container">
                 <div class="double-decker">
                     <h4 class="double-decker__heading heading heading__course heading__course--sm">It’s Action Time...Click The Link Below And Get Immediate Access To <span class="text__red">[Insert Name Of Your Course Here]</span> And Get Started Now!</h4>
                     <div class="payment__details">
                         <p class="t--bold payment__text">Only For $000</p>
                         <a href="#" class="btn btn__lg">
-                            <object class="btn__icon" data="/svg/download.svg" type="image/svg+xml">
-                            </object>
+                            <img class="lozad btn__icon" data-src="/svg/download.svg" data-alt="download icon">                            
                             <span>Get Instant Access</span>
                         </a>
                         <div class="payment__methods">
-                            <img class="payment__card" src="pictures/payment_method_discover_network_card-512.jpg" alt="Discover network">
-                            <img class="payment__card" src="pictures/payment_method_discover_network_card-512-1.jpg" alt="Visa">
-                            <img class="payment__card" src="pictures/payment_method_discover_network_card-512-2.jpg" alt="Paypal">
-                            <img class="payment__card" src="pictures/payment_method_discover_network_card-512-3.jpg" alt="Mastercard">
-                            <img class="payment__card" src="pictures/payment_method_discover_network_card-512-4.jpg" alt="American express">
+                            <picture class="lozad payment__card" data-alt="Discover network">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                            </picture>
+
+                            <picture class="lozad payment__card" data-alt="Visa">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                            </picture>
+
+                            <picture class="lozad payment__card" data-alt="Paypal">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                            </picture>
+
+                            <picture class="lozad payment__card" data-alt="Mastercard">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                            </picture>
+
+                            <picture class="lozad payment__card" data-alt="American express">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                            </picture>
+
                         </div>
                         <div class="payment__guarantee">
-                            <img class="payment__img" src="pictures/Frame88.png" alt="guaranty">
+                            <picture class="lozad payment__img" data-alt="guaranty">
+                                <source media="(min-width:1440px)" srcset="pictures/Frame88.webp">
+                                <source media="(min-width:768px)" srcset="pictures/Frame88-tab.webp">
+                                <source media="(min-width:568px)" srcset="pictures/Frame88-phone.webp">
+                                <source media="(max-width:568px)" srcset="pictures/Frame88-phone.webp">
+                            </picture>
                             <span class="paragraph__sm t--bold t--white">30-Day Money-Back Guarantee.</span>
                         </div>
                     </div>
@@ -812,19 +860,53 @@
                     <div class="payment__details">
                         <p class="t--bold payment__text">Only For $000</p>
                         <a href="#" class="btn btn__lg">
-                            <object class="btn__icon" data="/svg/download.svg" type="image/svg+xml">
-                            </object>
+                            <img class="lozad btn__icon" data-src="/svg/download.svg" data-alt="download icon">
                             <span>Get Instant Access</span>
                         </a>
                         <div class="payment__methods">
-                            <img class="payment__card" src="pictures/payment_method_discover_network_card-512.jpg" alt="Discover network">
-                            <img class="payment__card" src="pictures/payment_method_discover_network_card-512-1.jpg" alt="Visa">
-                            <img class="payment__card" src="pictures/payment_method_discover_network_card-512-2.jpg" alt="Paypal">
-                            <img class="payment__card" src="pictures/payment_method_discover_network_card-512-3.jpg" alt="Mastercard">
-                            <img class="payment__card" src="pictures/payment_method_discover_network_card-512-4.jpg" alt="American express">
+                            <picture class="lozad payment__card" data-alt="Discover network">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                            </picture>
+
+                            <picture class="lozad payment__card" data-alt="Visa">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                            </picture>
+
+                            <picture class="lozad payment__card" data-alt="Paypal">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                            </picture>
+
+                            <picture class="lozad payment__card" data-alt="Mastercard">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                            </picture>
+
+                            <picture class="lozad payment__card" data-alt="American express">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                            </picture>
+
                         </div>
                         <div class="payment__guarantee">
-                            <img class="payment__img" src="pictures/Frame88.png" alt="guaranty">
+                            <picture class="lozad payment__img" data-alt="guaranty">
+                                <source media="(min-width:1440px)" srcset="pictures/Frame88.webp">
+                                <source media="(min-width:768px)" srcset="pictures/Frame88-tab.webp">
+                                <source media="(min-width:568px)" srcset="pictures/Frame88-phone.webp">
+                                <source media="(max-width:568px)" srcset="pictures/Frame88-phone.webp">
+                            </picture>
                             <span class="paragraph__sm t--bold">30-Day Money-Back Guarantee.</span>
                         </div>
                     </div>
@@ -842,11 +924,11 @@
             </div>
 
             <div class="ps__user">
-                <picture>
-                    <source media="(min-width:1440px)" srcset="pictures/marketer.jpg">
-                    <source media="(min-width:768px)" srcset="pictures/marketer.jpg">
-                    <source media="(min-width:568px)" srcset="pictures/marketer.jpg">
-                    <img class="ps__user--img" src="pictures/marketer.jpg" alt="marketer" loading="lazy">
+                <picture class="lozad ps__user--img" data-alt="marketer">
+                    <source media="(min-width:1440px)" srcset="pictures/marketer.webp">
+                    <source media="(min-width:768px)" srcset="pictures/marketer-tab.webp">
+                    <source media="(min-width:568px)" srcset="pictures/marketer-tab.webp">
+                    <source media="(max-width:568px)" srcset="pictures/marketer-tab.webp">
                 </picture>
 
                 <p class="ps__user--name paragraph__md t--bold">Sergio Romero, Marketer</p>
@@ -861,20 +943,54 @@
             <div class="payment__details">
                 <p class="t--bold payment__text">Only For $000</p>
                 <a href="#" class="btn btn__lg">
-                    <object class="btn__icon" data="/svg/download.svg" type="image/svg+xml">
-                    </object>
+                    <img class="lozad btn__icon" data-src="/svg/download.svg" data-alt="download icon">
                     <span>Get Instant Access</span>
                 </a>
                 <div class="payment__methods">
-                    <img class="payment__card" src="pictures/payment_method_discover_network_card-512.jpg" alt="Discover network">
-                    <img class="payment__card" src="pictures/payment_method_discover_network_card-512-1.jpg" alt="Visa">
-                    <img class="payment__card" src="pictures/payment_method_discover_network_card-512-2.jpg" alt="Paypal">
-                    <img class="payment__card" src="pictures/payment_method_discover_network_card-512-3.jpg" alt="Mastercard">
-                    <img class="payment__card" src="pictures/payment_method_discover_network_card-512-4.jpg" alt="American express">
+                    <picture class="lozad payment__card" data-alt="Discover network">
+                        <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                        <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                        <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                        <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                    </picture>
+
+                    <picture class="lozad payment__card" data-alt="Visa">
+                        <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                        <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                        <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                        <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                    </picture>
+
+                    <picture class="lozad payment__card" data-alt="Paypal">
+                        <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                        <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                        <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                        <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                    </picture>
+
+                    <picture class="lozad payment__card" data-alt="Mastercard">
+                        <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                        <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                        <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                        <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                    </picture>
+
+                    <picture class="lozad payment__card" data-alt="American express">
+                        <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                        <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                        <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                        <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                    </picture>
+
                 </div>
                 <div class="payment__guarantee">
-                    <img class="payment__img" src="pictures/Frame88.png" alt="guaranty">
-                    <span class="paragraph__sm t--bold">30-Day Money-Back Guarantee.</span>
+                    <picture class="lozad payment__img" data-alt="guaranty">
+                        <source media="(min-width:1440px)" srcset="pictures/Frame88.webp">
+                        <source media="(min-width:768px)" srcset="pictures/Frame88-tab.webp">
+                        <source media="(min-width:568px)" srcset="pictures/Frame88-phone.webp">
+                        <source media="(max-width:568px)" srcset="pictures/Frame88-phone.webp">
+                    </picture>
+                    <span class="paragraph__sm t--bold t--white">30-Day Money-Back Guarantee.</span>
                 </div>
             </div>
         </div>
@@ -889,32 +1005,27 @@
 
                 <div class="stages__list">
                     <div class="stages__item">
-                        <object class="stages__item--icon" data="/svg/stage1.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad stages__item--icon" data-src="/svg/stage1.svg" data-alt="stages icon">
                         <p class="stages__item--text paragraph__sm t--bold--semi">1. Planning</p>
                     </div>
 
                     <div class="stages__item">
-                        <object class="stages__item--icon" data="/svg/stage2.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad stages__item--icon" data-src="/svg/stage2.svg" data-alt="stages icon">
                         <p class="stages__item--text paragraph__sm t--bold--semi">2. Skill acquisition and portfolio building</p>
                     </div>
 
                     <div class="stages__item">
-                        <object class="stages__item--icon" data="/svg/stage3.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad stages__item--icon" data-src="/svg/stage3.svg" data-alt="stages icon">
                         <p class="stages__item--text paragraph__sm t--bold--semi">3. Launching</p>
                     </div>
 
                     <div class="stages__item">
-                        <object class="stages__item--icon" data="/svg/stage4.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad stages__item--icon" data-src="/svg/stage4.svg" data-alt="stages icon">
                         <p class="stages__item--text paragraph__sm t--bold--semi">4. Acceleration</p>
                     </div>
 
                     <div class="stages__item">
-                        <object class="stages__item--icon" data="/svg/stage5.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad stages__item--icon" data-src="/svg/stage5.svg" data-alt="stages icon">
                         <p class="stages__item--text paragraph__sm t--bold--semi">5. Scaling</p>
                     </div>
                 </div>
@@ -928,21 +1039,55 @@
                 <div class="payment__details">
                     <p class="t--bold payment__text">Only For $000</p>
                     <a href="#" class="btn btn__lg">
-                        <object class="btn__icon" data="/svg/download.svg" type="image/svg+xml">
-                        </object>
+                        <img class="lozad btn__icon" data-src="/svg/download.svg" data-alt="download icon">
                         <span>Get Instant Access</span>
                     </a>
                     <div class="payment__methods">
-                        <img class="payment__card" src="pictures/payment_method_discover_network_card-512.jpg" alt="Discover network">
-                        <img class="payment__card" src="pictures/payment_method_discover_network_card-512-1.jpg" alt="Visa">
-                        <img class="payment__card" src="pictures/payment_method_discover_network_card-512-2.jpg" alt="Paypal">
-                        <img class="payment__card" src="pictures/payment_method_discover_network_card-512-3.jpg" alt="Mastercard">
-                        <img class="payment__card" src="pictures/payment_method_discover_network_card-512-4.jpg" alt="American express">
-                    </div>
-                    <div class="payment__guarantee">
-                        <img class="payment__img" src="pictures/Frame88.png" alt="guaranty">
-                        <span class="paragraph__sm t--bold">30-Day Money-Back Guarantee.</span>
-                    </div>
+                            <picture class="lozad payment__card" data-alt="Discover network">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512.webp">
+                            </picture>
+
+                            <picture class="lozad payment__card" data-alt="Visa">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-1.webp">
+                            </picture>
+
+                            <picture class="lozad payment__card" data-alt="Paypal">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-2.webp">
+                            </picture>
+
+                            <picture class="lozad payment__card" data-alt="Mastercard">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-3.webp">
+                            </picture>
+
+                            <picture class="lozad payment__card" data-alt="American express">
+                                <source media="(min-width:1440px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                                <source media="(min-width:768px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                                <source media="(min-width:568px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                                <source media="(max-width:568px)" srcset="pictures/payment_method_discover_network_card-512-4.webp">
+                            </picture>
+
+                        </div>
+                        <div class="payment__guarantee">
+                            <picture class="lozad payment__img" data-alt="guaranty">
+                                <source media="(min-width:1440px)" srcset="pictures/Frame88.webp">
+                                <source media="(min-width:768px)" srcset="pictures/Frame88-tab.webp">
+                                <source media="(min-width:568px)" srcset="pictures/Frame88-phone.webp">
+                                <source media="(max-width:568px)" srcset="pictures/Frame88-phone.webp">
+                            </picture>
+                            <span class="paragraph__sm t--bold">30-Day Money-Back Guarantee.</span>
+                        </div>
                 </div>
 
             </div>

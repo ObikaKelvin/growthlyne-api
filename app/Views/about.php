@@ -7,20 +7,21 @@
 {% endblock %}
 
 {% block content %}
+    <!-- start of hero section -->
     
     <section id="hero-section-about">
         <div class="container">
             <div class="hero">
                 <div class="hero__left--about">
-                    <h1 class="heading heading__main heading__about">How A Struggling Freelancer Broke Free From Mediocrity And Started A Long-Term, <span class="text__red--bold">Wildly Successful</span> <span class="hero__span">6-Figure Freelance Career...</span></h1>
+                    <h1 class="heading heading__about">How A Struggling Freelancer Broke Free From Mediocrity And Started A Long-Term, <span class="text__red--bold">Wildly Successful</span> <span class="hero__span">6-Figure Freelance Career...</span></h1>
                     <p class="hero__text--about"> ....And How He Stopped -- Once And For All -- Working With Low-Quality Clients, While Earning More And Scaling A Profitable Freelance Business At Lightning Speed!</p>
                 </div>
                 <div class="hero__right">
                     <picture>
-                        <source media="(min-width:1440px)" srcset="pictures/hero-img.png">
-                        <source media="(min-width:768px)" srcset="pictures/hero-img-tab.png">
-                        <source media="(min-width:568px)" srcset="pictures/hero-img-phone.png">
-                        <img class="hero__img--about" src="pictures/hero-img.png" alt="hero-img" loading="lazy">
+                        <source media="(min-width:1440px)" srcset="pictures/hero-about.webp">
+                        <source media="(min-width:768px)" srcset="pictures/hero-about-tab.webp">
+                        <source media="(min-width:568px)" srcset="pictures/hero-about-phone.webp">
+                        <img class="hero__img--about" src="pictures/hero-about.webp" alt="hero-img">
                     </picture>
                     <svg class="hero__svg" width="629" height="540" viewBox="0 0 629 540" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.4" d="M656.141 381.31C669.124 368.324 669.124 347.27 656.141 334.283C643.157 321.297 622.107 321.297 609.123 334.283C596.14 347.27 596.14 368.324 609.123 381.31C622.107 394.296 643.157 394.296 656.141 381.31Z" fill="#0A6B5E"/>
@@ -86,16 +87,27 @@
         </div>
     </section>
 
+    <!-- end of hero section -->
+
     
+    <!-- start of testimonial section -->
 
     <section id="testimonial-section">
+        <picture class="lozad testimonial__art">
+            <source media="(min-width:1440px)" srcset="pictures/testimonial-art.webp">
+            <source media="(min-width:768px)" srcset="pictures/testimonial-art-tab.webp">
+            <source media="(min-width:568px)" srcset="pictures/testimonial-art-phone.webp">
+            <source media="(max-width:568px)" srcset="pictures/testimonial-art-phone.webp">
+        </picture>
+
         <div class="container text__center">
-            <picture class="testimonial__img">
-                <source media="(min-width:1440px)" srcset="pictures/testimonial-img.jpg">
-                <source media="(min-width:768px)" srcset="pictures/testimonial-img-tab.jpg">
-                <source media="(min-width:568px)" srcset="pictures/testimonial-img-phone.jpg">
-                <img src="pictures/testimonial-img.jpg" alt="testimonial-img" loading="lazy">
+            <picture class="lozad testimonial__img">
+                <source media="(min-width:1440px)" srcset="pictures/testimonial-img.webp">
+                <source media="(min-width:768px)" srcset="pictures/testimonial-img-tab.webp">
+                <source media="(min-width:568px)" srcset="pictures/testimonial-img-phone.webp">
+                <source media="(max-width:568px)" srcset="pictures/testimonial-img-phone.webp">
             </picture>
+
             <span class="paragraph paragraph__md paragraph__md--1">Hey, I’m <span class="text__red--bold">[Insert Name Here]</span> .</span>
             <span class="paragraph paragraph__md paragraph__md--1">Back when I was a clueless freelance newbie, I struggled, <span class="text__black--bold paragraph__bg paragraph__bg--1">a lot</span> .</span>
             <span class="paragraph paragraph__md paragraph__md--1">You see, for me, it was standard practice to spend sleepless nights glued to my Mac working on some client’s project that always took longer to complete.</span>
@@ -104,13 +116,30 @@
         </div>
     </section>
 
+    <!-- end of testimonial section -->
+
+
+    <!-- start of quote section -->
+    
     <section class="quote-section">
         <div class="container">
             <h2 class="heading heading__quote">The Thing Is, I Desperately Wanted To Run  My Digital Freelancing Business In A Much Smoother, Efficient Way… And Make More.</h2>
         </div>
     </section>
 
-    <section id="regret">
+    <!-- end of quote section -->
+
+
+    <!-- start of regret section -->
+    
+    <section id="regret" data-background-image="pictures/regret-img.webp">
+        <div class="regret__overlay"></div>
+        <picture class="lozad regret__img">
+            <source media="(min-width:1440px)" srcset="pictures/regret-img.webp">
+            <source media="(min-width:768px)" srcset="pictures/regret-img-tab.webp">
+            <source media="(min-width:568px)" srcset="pictures/regret-img-phone.webp">
+            <source media="(max-width:568px)" srcset="pictures/regret-img-phone.webp">
+        </picture>
         <div class="container text__center">
             <div class="regret__text">
                 <span class="paragraph paragraph__md paragraph__md--1 text__white--bold">I was sick and tired of working with clients who were extremely picky but never wanted to pay for revisions or always wanted ridiculous discounts that were downright crazy.</span>
@@ -121,36 +150,62 @@
         </div>
     </section>
 
+    <!-- end of regret section -->
+
+
+    <!-- start of quote section -->
+    
     <section class="quote-section">
         <div class="container">
             <h2 class="heading heading__quote">I Met One Of The Most Famous, And Successful Marketers Alive...</h2>
         </div>
     </section>
 
-        <section id="marketing">
-            <div class="container">
-                <div class="marketing__text">
-                    <span class="paragraph paragraph__md paragraph__md--2">Yes, a true marketing ace who showed me how I could easily build a <span class="paragraph__bg text__red--bold">“marketing powerhouse machine”</span> that would run on complete autopilot while enormously freeing up my time.</span>
-                    <span class="paragraph paragraph__bg paragraph__bg--2 text__white--bold">Thanks to him, I learned killer marketing tricks that worked like a charm (and still are working) and helped me to build an uber-success freelance business that provides me with financial freedom.</span>
-                    <span class="paragraph paragraph__md paragraph__md--2">I no longer sell myself short, nor I work with clients who are a pain and always flood my inbox with stupid requests.</span>
-                    <span class="paragraph paragraph__bg paragraph__bg--2 text__white--bold">I work on my own terms, and I call the shots.</span>
-                    <span class="paragraph paragraph__md paragraph__md--2">But, probably <span class="text__red text__underline">the most important thing</span> is that I’m no longer a victim of mediocrity and stagnation -- I’m able to effortlessly scale my business and boost it to a level that before I thought was impossible.</span>
-                </div>
-            </div>
-        </section>
+    <!-- end of quote section -->
 
-        <section class="offer-section">
-            <div class="container">
-                <div class="offer">
-                    <h1 class="heading heading__offer">Today, I’d Like To Give You A Hand So That You Can Do The Same!</h1>
-                    <span class="offer__text paragraph paragraph__md paragraph__md--2">You see, I always come across a lot of relatively successful freelancers (and some that aren’t that successful), and they remind me of when I was in their same shoes... wanting more but feeling utterly stuck.</span>
-                    <span class="offer__text paragraph paragraph__md paragraph__md--2">I can tell you, <span class="paragraph__bg paragraph__bg--2 text__white--bold">it sucks</span>.</span>
-                    <span class="offer__text paragraph paragraph__md paragraph__md--2">That’s why I got to work and decided to develop and create -- from scratch -- <span class="paragraph__bg paragraph__bg--2 text__white--bold">a mind-blowing, step-by-step </span> course <span class="hero__span"> called <span class="paragraph__md paragraph__md--2 text__red ">[Insert Name Of Course Here]</span> where I’ll reveal a </span> simple 5-step roadmap that will set you apart from mediocrity while skyrocketing your current stagnant freelance business.</span>
-                    <span class="offer__text paragraph paragraph__md paragraph__md--2 text__red text__underline">You’ll learn not only how to generate as many high-paying clients you want while efficiently and effortlessly scaling, but also you’ll accelerate your freelance success and take things to the next level.</span>
-                    <span class="offer__text paragraph paragraph__md paragraph__md--2">I highly suggest you click the button below and you’ll know more about it -- I promise... <span class="paragraph__bg paragraph__bg--2 text__white--bold">you’ll simply love it!</span></span>
-                    <div class="offer__btn"><a href="#" class="btn btn__lg ">Yes, I Want This Now!</a></div>
-                </div>
+
+    <!-- start of marketing section -->
+    
+    <section id="marketing">
+        <div class="marketing__overlay"></div>
+
+        <picture class="lozad marketing__img">
+            <source media="(min-width:1440px)" srcset="pictures/marketing-img.webp">
+            <source media="(min-width:768px)" srcset="pictures/marketing-img-tab.webp">
+            <source media="(min-width:568px)" srcset="pictures/marketing-img-phone.webp">
+            <source media="(max-width:568px)" srcset="pictures/marketing-img-phone.webp">
+        </picture>
+
+        <div class="container">
+            <div class="marketing__text">
+                <span class="paragraph paragraph__md paragraph__md--2">Yes, a true marketing ace who showed me how I could easily build a <span class="paragraph__bg text__red--bold">“marketing powerhouse machine”</span> that would run on complete autopilot while enormously freeing up my time.</span>
+                <span class="paragraph paragraph__bg paragraph__bg--2 text__white--bold">Thanks to him, I learned killer marketing tricks that worked like a charm (and still are working) and helped me to build an uber-success freelance business that provides me with financial freedom.</span>
+                <span class="paragraph paragraph__md paragraph__md--2">I no longer sell myself short, nor I work with clients who are a pain and always flood my inbox with stupid requests.</span>
+                <span class="paragraph paragraph__bg paragraph__bg--2 text__white--bold">I work on my own terms, and I call the shots.</span>
+                <span class="paragraph paragraph__md paragraph__md--2">But, probably <span class="text__red text__underline">the most important thing</span> is that I’m no longer a victim of mediocrity and stagnation -- I’m able to effortlessly scale my business and boost it to a level that before I thought was impossible.</span>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <!-- end of marketing section -->
+
+
+    <!-- start of offer section -->
+    
+    <section class="offer-section">
+        <div class="container">
+            <div class="offer">
+                <h1 class="heading heading__offer">Today, I’d Like To Give You A Hand So That You Can Do The Same!</h1>
+                <span class="offer__text paragraph paragraph__md paragraph__md--2">You see, I always come across a lot of relatively successful freelancers (and some that aren’t that successful), and they remind me of when I was in their same shoes... wanting more but feeling utterly stuck.</span>
+                <span class="offer__text paragraph paragraph__md paragraph__md--2">I can tell you, <span class="paragraph__bg paragraph__bg--2 text__white--bold">it sucks</span>.</span>
+                <span class="offer__text paragraph paragraph__md paragraph__md--2">That’s why I got to work and decided to develop and create -- from scratch -- <span class="paragraph__bg paragraph__bg--2 text__white--bold">a mind-blowing, step-by-step </span> course <span class="hero__span"> called <span class="paragraph__md paragraph__md--2 text__red ">[Insert Name Of Course Here]</span> where I’ll reveal a </span> simple 5-step roadmap that will set you apart from mediocrity while skyrocketing your current stagnant freelance business.</span>
+                <span class="offer__text paragraph paragraph__md paragraph__md--2 text__red text__underline">You’ll learn not only how to generate as many high-paying clients you want while efficiently and effortlessly scaling, but also you’ll accelerate your freelance success and take things to the next level.</span>
+                <span class="offer__text paragraph paragraph__md paragraph__md--2">I highly suggest you click the button below and you’ll know more about it -- I promise... <span class="paragraph__bg paragraph__bg--2 text__white--bold">you’ll simply love it!</span></span>
+                <div class="offer__btn"><a href="#" class="btn btn__lg ">Yes, I Want This Now!</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end of offer section -->
         
 {% endblock %}

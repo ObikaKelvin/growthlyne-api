@@ -1,0 +1,38 @@
+#section-legal{
+    text-align: left;
+    margin-bottom: 8rem;
+
+    @include respond(phone-break){
+        padding: 0 2rem;
+    }
+}
+
+.legal{
+    &__text{
+        text-transform: capitalize;
+        width: 92.8rem;
+
+        &:not(:last-child){
+            margin-bottom: 3rem;
+        }
+
+        @include respond(tab-break){
+            width: 69.8rem;
+        }
+
+        @include respond(phone-break){
+            width: 52rem;
+        }
+
+    }
+
+    &__item{
+        &:not(:last-child){
+            margin-bottom: 8.6rem;
+        }
+    }
+
+    &__title{
+        margin-bottom: 2.8rem;
+    }
+}

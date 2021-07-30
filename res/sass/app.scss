@@ -1,0 +1,48 @@
+//imports sass variables
+@import 'abstracts/variables';
+//imports sass mixins
+@import 'abstracts/mixins';
+
+//imports base css used by our app
+@import 'base/base';
+//imports general headings, paragraphs used through our app
+@import 'base/typography';
+//imports css utility classes
+@import 'base/utilities';
+
+//imports reusable button component
+@import 'components/button';
+//imports reusable card component
+@import 'components/card';
+//imports reusable form component
+@import 'components/form';
+//imports reusable hero component
+@import 'components/hero';
+//imports reusable list component
+@import 'components/list';
+//imports reusable offer component
+@import 'components/offer';
+
+//imports reusable container layout
+@import 'layout/container';
+//imports reusable footer layout
+@import 'layout/footer';
+//imports reusable header layout
+@import 'layout/header';
+//imports reusable steps layout
+@import 'layout/steps';
+
+//imports css specific to the about page
+@import 'pages/about';
+//imports css specific to the checkout page
+@import 'pages/checkout';
+//imports css specific to the contact page
+@import 'pages/contact';
+//imports css specific to the course page
+@import 'pages/course';
+//imports css specific to the home page
+@import 'pages/home';
+//imports css specific to the legal page
+@import 'pages/legal';
+//imports css specific to the login page
+@import 'pages/login';

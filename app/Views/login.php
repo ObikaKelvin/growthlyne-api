@@ -17,7 +17,7 @@
                     <source media="(min-width:1440px)" srcset="pictures/login-img.webp">
                     <source media="(min-width:768px)" srcset="pictures/login-img-tab.webp">
                     <source media="(min-width:568px)" srcset="pictures/login-img-phone.webp">
-                    <img class="login__img" src="pictures/login-img.webp" alt="login-img" loading="lazy">
+                    <img class="login__img" src="pictures/login-img.webp" alt="login-img">
                 </picture>
                 
                 <form class="form__login">

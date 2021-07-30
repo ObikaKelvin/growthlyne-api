@@ -1,0 +1,187 @@
+#contact{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6.8rem;
+
+    @include respond(tab-break){
+        & .container{
+            padding: 0;
+        }
+    }
+}
+
+.contact{
+    
+    &__text{
+        font-size: 3.2rem;
+        line-height: 4.48rem;
+        text-align: center;
+        width: 73.1rem;
+        margin: 0 auto;
+        margin-bottom: 9.0rem;
+
+        @include respond(tab-break){
+            margin-bottom: 8.0rem;
+            width: 56rem;
+        }
+
+        @include respond(phone-break){
+            width: 41rem;
+            line-height: 3.4rem;
+            margin-bottom: 6.0rem;
+            font-size: 2.4rem;
+        }
+    }
+
+    &__main{
+        display: flex;
+
+        @include respond(tab-break){
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    &__info{
+        position: relative;
+        color: $white;
+        background-color: $blue-1;
+        flex: 0 0 30%;
+        height: 64.3rem;
+        box-sizing: border-box;
+        margin-right: 8.2rem;
+        border-radius: 1.0rem;
+        padding: 5.8rem 5.0rem;
+
+        &--title{
+            font-size: 3.2rem;
+            font-family: Bitter;
+            margin-bottom: 2.0rem;
+
+            @include respond(tab-break){
+                font-size: 4.27rem;
+            }
+
+        }
+    
+        &--sub{
+            font-size: 1.8rem;
+            width: 32.8rem;
+            text-transform: capitalize;
+            line-height: 137%;
+            margin-bottom: 6.0rem;
+
+            @include respond(tab-break){
+                text-align: center;
+                width: 33rem;
+            }
+        }
+
+        &--items{
+            display: flex;
+            flex-direction: column;
+
+            @include respond(tab-break){
+                flex-direction: row-reverse;
+                margin-bottom: 14.13rem;
+            }
+
+            @include respond(phone-break){
+                flex-direction: column-reverse;
+                align-items: center;
+                margin-bottom: 14.13rem;
+            }
+        }
+
+        &--item{
+            display: flex;
+
+            &:not(:last-child){
+                margin-bottom: 4.2rem;
+
+                @include respond(tab-break){
+                    margin-bottom: 0;
+                }
+            }
+
+            &:not(:first-child){
+                @include respond(tab-break){
+                    margin-right: 1.67rem;
+                }
+
+                @include respond(phone-break){
+                    margin-right: 0;
+                    margin-bottom: 2.27rem;
+                }
+            }
+
+            @include respond(phone-break){
+                width: 28rem;
+            }
+        }
+
+        &--icon{
+            margin-right: 2.0rem;
+            width: 2.4rem;
+            height: 2.4rem;
+
+            @include respond(tab-break){
+                margin-right: 2.67rem;
+                width: 3.2rem;
+                height: 3.2rem;
+            }
+        }
+
+        &--text{
+            font-size: 1.6rem;
+            line-height: 2.6rem;
+            width: 20.0rem;
+
+            @include respond(tab-break){
+                width: 16rem;
+            }
+
+            @include respond(phone-break){
+                width: 32.4rem;
+                line-height: 3.47rem;
+            }
+        }
+
+        &--footer{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 14.4rem;
+            height: 14.3rem;
+            transform: translate(-50%, 0%);
+
+            @include respond(tab-break){
+                left: 86%;
+            }
+
+            @include respond(phone-break){
+                left: 50%;
+            }
+
+        }
+
+        @include respond(tab-break){
+            margin-right: 0;
+            width: 70rem;
+            height: 56.53rem;
+            margin-bottom: 10.67rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8.8rem 5.0rem;
+        }
+
+        @include respond(phone-break){
+            width: 52rem;
+        }
+        
+
+    }
+
+}

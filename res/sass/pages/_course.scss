@@ -1,0 +1,920 @@
+//All the sections in the course page
+
+#section{
+    &-freelancers{
+        margin-bottom: 15.3rem;
+    }
+
+    &-inside{
+        margin-bottom: 23.4rem;
+
+        @include respond(tab-break){
+            margin-bottom: 14.6rem;
+        }
+
+        @include respond(phone-break){
+            margin-bottom: 7.2rem;
+        }
+    }
+    
+    &-discover{
+        @include respond(tab-break){
+            & .offer{
+                margin-top: 0;
+            }
+        }
+
+        @include respond(phone-break){
+            padding: 3rem
+        }
+    }
+
+    &-knowledge{
+        background-color: $blue-3;
+        color: $white;
+        display: flex;
+        justify-content: flex-start;
+        text-transform: capitalize;
+    }
+
+    &-roadmap{
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    &-spill{
+        color: $white;
+        background-color: $blue;
+        padding: 9.5rem 0;
+    }
+
+    &-blueprint{
+        padding: 14rem 0;
+        text-align: center;
+    }
+
+    &-actionable{
+        background-color: $blue;
+        color: $white;
+        text-transform: capitalize;
+    }
+
+    &-cvn-reasons{
+        background-color: $blue;
+        color: $white;
+        text-transform: capitalize;
+        position: relative;
+    }
+
+    &-double-decker{
+        background-color: $blue-3;
+        color: $white;
+    }
+
+    &-ps{
+        background-color: $green;
+        padding: 24.6rem 0 3.2rem 0;
+        color: $white;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    &-last-thing{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-transform: capitalize;
+    }
+}
+
+
+
+.course{
+    @include respond(laptop-break){
+        &__heading{
+            width: 108.6rem;
+        }
+    }
+
+    &__card{
+        background-color: $white;
+        padding-bottom: 2rem;
+        width: 100%;
+        position: relative;
+
+        @include respond(phone-break){
+            // height: 52rem;
+            padding-bottom: 0;
+        }
+    }
+
+    &-testimonial{
+
+        &__heading{
+            @include respond(tab-break){
+                width: 66rem;
+            }
+        }
+
+        &__text{
+            width: 95rem;
+            margin-bottom: 12.5rem;
+
+            @include respond(tab-break){
+                width: 57.2rem;
+            }
+
+            @include respond(phone-break){
+                width: 54.2rem;
+                margin-bottom: 4.5rem;
+            }
+        }
+
+        &__card{
+            display: flex;
+            align-items: flex-start;
+            padding: 6rem;
+            border: dashed 2px $grey-1;
+
+            &:not(:last-child){
+                margin-bottom: 13.2rem;
+
+                @include respond(tab-break){
+                    margin-bottom: 4.2rem;
+                }
+            }
+
+            &:nth-child(even){
+                background-color: $grey;
+            }
+
+            @include respond(phone-break){
+                flex-direction: column-reverse;
+                align-items: center;
+                padding: 2rem;
+            }
+
+            &--left{
+                margin-right: 8.2rem;
+
+                @include respond(tab-break){
+                    margin-right: 3rem;
+                }
+
+                @include respond(phone-break){
+                    margin-right: 0;
+                }
+
+            }
+
+            &--review{
+                color: $black-5;
+                font-size: 3.2rem;
+                font-weight: 600;
+                width: 73.6rem;
+                margin-bottom: 4rem;
+
+                @include respond(tab-break){
+                    font-size: 2.4rem;
+                    width: 43.8rem;
+                }
+
+                @include respond(phone-break){
+                    font-size: 2rem;
+                    width: 45.8rem;
+                    margin-bottom: 0;
+                }
+            }
+
+            &--bottom{
+                @include respond(phone-break){
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column-reverse;
+                }
+            }
+
+            &--user{
+                & > *{
+                    margin-bottom: 1rem;
+
+                    @include respond(tab-break){
+                        margin-bottom: .5rem;
+                    }
+
+                    @include respond(phone-break){
+                        text-align: center;
+                    }
+                }
+            }
+
+            &--rating{
+                width: 19.68rem;
+                height: 2.64rem;
+
+                @include respond(tab-break){
+                    width: 15.4rem;
+                    height: 2rem;
+                }
+
+                @include respond(phone-break){
+                    margin: 0 auto;
+                }
+            }
+
+            @include respond(tab-break){
+                padding: 6rem 2rem 2rem 2rem;
+            }
+
+            @include respond(phone-break){
+                padding: 1rem;
+            }
+
+        }
+
+        
+        &__img{
+            width: 19.1rem;
+            height: 20.1rem;
+
+            & > img {
+                width: inherit;
+                height: inherit;
+                border-radius: 11rem;
+            }
+
+            @include respond(tab-break){
+                width: 11.6rem;
+                height: 11.6rem;
+
+                @include respond(phone-break){
+                    width: 8.5rem;
+                    height: 8.5rem;
+                }
+            }
+        }
+    }
+}
+
+.discover{
+    &__list{
+        @include respond(tab-break){
+            margin-bottom: 21.5rem;
+        }
+    }
+
+    &__heading{
+        @include respond(phone-break){
+            width: 43rem;
+        }
+    }
+
+    &__text{
+        font-size: 2.4rem;
+        line-height: 3.4rem;
+
+        @include respond(phone-break){
+            font-size: 2.2rem;
+            line-height: 2.5rem;
+        }
+    }
+}
+
+.freelancers{
+    &__text{
+        // width: 53.9rem;
+        // text-transform: capitalize;
+
+        @include respond(tab-break){
+            line-height: 25px;
+        }
+    }
+
+    &__heading{
+        align-self: center;
+        width: 73.2rem;
+        margin: 0 auto;
+        margin-bottom: 9.6rem;
+
+        @include respond(phone-break){
+            width: 50rem;
+        }
+    }
+}
+
+.inside{
+    &__heading{
+        align-self: center;
+        margin: 0 auto;
+        margin-bottom: 11.8rem;
+
+        @include respond(tab-break){
+            width: 60rem;
+        }
+
+        @include respond(phone-break){
+            width: 52rem;
+            font-size: 4.2rem;
+            line-height: 4.5rem;
+        }
+    }
+}
+
+.actionable{
+
+    &__heading{
+        width: 99rem;
+        margin-bottom: 2rem;
+
+        @include respond(tab-break){
+            width: 61rem;
+        }
+
+        @include respond(phone-break){
+            width: 53rem;
+        }
+    }
+
+    &__text{
+        width: 91rem;
+
+        &--sm{
+            width: 70rem;
+
+            @include respond(phone-break){
+                width: 53rem;
+                font-size: 2.8rem;
+            }
+        }
+
+        @include respond(tab-break){
+            width: 53rem;
+            line-height: 4.4rem;
+        }
+
+        @include respond(phone-break){
+            width: 50rem;
+            font-size: 2.8rem;
+        }
+    }
+}
+
+.planning{
+    &__text{
+        &--bg{
+
+            @include respond(phone-break){
+                font-size: 3.8rem;
+                line-height: 5.7rem;
+                width: 52rem;
+            }
+        }
+    }
+}
+
+
+.cvn{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+
+    @include respond(phone-break){
+        width: auto;
+    }
+
+    &__heading{
+        width: 105rem;
+        text-align: center;
+        text-transform: capitalize;
+        margin-bottom: 4rem;
+
+        @include respond(tab-break){
+            width: 61rem;
+        }
+
+        @include respond(phone-break){
+            width: 52rem;
+        }
+    }
+
+    &__img{
+        position: absolute;
+        right: 0;
+        top: 61%;
+        width: 64rem;
+        height: 75rem;
+        transform: translate(0%, -50%);
+
+        & > img {
+            width: inherit;
+            height: inherit;
+            border-radius: 22px 0 0 22px;
+        }
+
+        @include respond(tab-break){
+            width: 38.3rem;
+            height: 49.6rem;
+            top: 56%;
+        }
+        @include respond(phone-break){
+
+            width: 25.3rem;
+            height: 37.6rem;
+            top: 54%;
+        }
+    }
+
+    &__text{
+        width: 50.8rem;
+        font-size: 2.4rem;
+        text-transform: capitalize;
+    }
+
+    &__item{
+        &:not(:last-of-type){
+            margin-bottom: 4.8rem;    
+        }
+
+        &:nth-child(2){
+            @include respond(tab-break){
+                width: 30rem;
+            }
+        }
+
+        &:nth-child(3){
+            @include respond(tab-break){
+                width: 30rem;
+            }
+        }
+    }
+}
+
+.double-decker{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+
+    &__heading{
+        width: 104rem;
+        margin-bottom: 7rem;
+
+        @include respond(tab-break){
+            width: 71rem;
+        }
+
+        @include respond(phone-break){
+            width: 45.8rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__img{
+        height: 30.9rem;
+        width: 30.9rem;
+        margin-bottom: 5.2rem;
+
+        & > img {
+            width: inherit;
+            height: inherit;
+        }
+
+        @include respond(tab-break){
+            width: 16.9rem;
+            height: 16.9rem;
+        }
+
+        @include respond(phone-break){
+            width: 21.2rem;
+            height: 21.2rem;
+        }
+    }
+
+    &__text{
+        width: 73.2rem;
+        & > *:not(:last-child){
+            margin-bottom: 2.6rem;
+        }
+
+        &--full{
+            margin-bottom: 2.6rem;
+            width: 90rem;
+
+            @include respond(tab-break){
+                width: 63rem;
+            }
+
+            @include respond(phone-break){
+                font-size: 2.8rem;
+                width: 48.8rem;
+            }
+        }
+
+        @include respond(tab-break){
+            width: 64rem;
+        }
+
+        @include respond(phone-break){
+            width: 53rem;
+        }
+    }
+}
+
+#action-time{
+    position: relative;
+    color: $white;
+    padding: 11.6rem 0 15rem 0;
+
+    @include respond(phone-break){
+        & .double-decker__heading{
+            font-size: 3.2rem;
+            width: 52rem;
+        }
+
+        padding: 4.6rem 0 15rem 0;
+    }
+}
+
+.action-time{
+    &__overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background-image: linear-gradient(
+        to right bottom,
+        rgba($black, 0.83),
+        rgba($black, 0.83));
+        z-index: -1;
+    }
+
+    &__img{
+        position: absolute;
+        z-index: -2;
+        width: 100%;
+        height: 100%;
+        top: 0;
+
+        & > img{
+            width: inherit;
+            height: inherit;
+        }
+    }
+}
+
+.payment{
+    &__details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & > *:not(:last-child){
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__details{
+        font-size: 2.2rem;
+    }
+
+    &__card{
+        width: 8.8rem;
+        height: 5.5rem;
+        border-radius: 7px;
+
+        & > img {
+            width: inherit;
+            height: inherit;
+        }
+
+        &:not(:last-child){
+        margin-right: 1rem;
+        }
+
+        @include respond(phone-break){
+            width: 6.6rem;
+            height: 4.3rem;
+        }
+    }
+
+    &__guarantee{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $black;
+    }
+
+    &__img{
+        width: 5.8rem;
+        height: 5.8rem;
+        margin-right: 2rem;
+
+        & > img {
+            width: inherit;
+            height: inherit;
+        }
+    }
+}
+
+.ps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__text{
+        width: 66.8rem;
+        margin-bottom: 7rem;
+
+        & > *:not(:last-child){
+            margin-bottom: 2.8rem;
+        }
+
+        @include respond(tab-break){
+            width: 55rem;
+        }
+
+    }
+
+    &__note{
+        width: 112.2rem;
+        margin-bottom: 14.2rem;
+
+        & > *:not(:last-child){
+            margin-bottom: 7.2rem;
+        }
+
+        @include respond(tab-break){
+            width: 70.4rem;
+            margin-bottom: 10.6rem;
+        }
+
+        @include respond(tab-break){
+            width: 54.4rem;
+            margin-bottom: 10.6rem;
+        }
+
+        &--text{
+            line-height: 2.8rem;
+        }
+    }
+
+    &__title{
+        font-size: 5.2rem;
+        line-height: 4.5rem;
+
+        @include respond(tab-break){
+            font-size: 3.2rem;
+            line-height: 28px;
+        }
+    }
+
+    &__user{
+        margin-bottom: 7rem;
+
+        &--name{
+            color: $black;
+        }
+
+        &--img{
+            border-radius: 10rem;
+            width: 19.6rem;
+            height: 19.6rem;
+
+            & > img {
+                width: inherit;
+                height: inherit;
+            }
+        }
+    }
+}
+
+.stages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__list{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 10.8rem;
+
+        @include respond(tab-break){
+            margin-bottom: 10rem;
+        }
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 37rem;
+        padding: 5rem 0;
+
+        &--text{
+            width: 25rem;
+            text-align: center;
+        }
+
+        &--icon{
+            width: 13.8rem;
+            height: 13.8rem;
+            margin-bottom: 1rem;
+        }
+
+        @include respond(tab-break){
+            width: 30rem;
+
+            &:nth-child(3){
+                width: 100%;
+            }
+        }
+
+        @include respond(phone-break){
+            width: 24rem;
+
+            &:nth-child(3){
+                width: 24rem;
+            }
+        }
+    }
+
+    &__text{
+        width: 73.6rem;
+        text-align: center;
+        margin-bottom: 10.8rem;
+
+        
+        @include respond(tab-break){
+            width: 50rem;
+            margin-bottom: 9.8rem;
+        }
+
+        @include respond(phone-break){
+            width: 42rem;
+        }
+    }
+
+    &__paragraph{
+        width: 73.6rem;
+        text-align: center;
+        line-height: 4.5rem;
+        margin-bottom: 10.8rem;
+        
+        & > *:not(:last-child){
+            margin-bottom: 2.8rem;
+        }
+
+        @include respond(tab-break){
+            width: 57rem;
+        }
+
+        @include respond(phone-break){
+            width: 43rem;
+        }
+    }
+}
+
+.knowledge{
+    &__heading{
+        width: 82.9rem;
+        text-align: left;
+
+        @include respond(tab-break){
+            width: 59.7rem;
+        }
+
+        @include respond(phone-break){
+            width: 46rem;
+        }
+    }
+
+    &__container{
+        align-items: flex-start;
+        margin-left: 19.3rem;
+
+        @include respond(tab-break){
+            margin-left: 0;
+        }
+    }
+
+    &__text{
+        width: 71rem;
+
+        &:not(:last-of-type){
+            margin-bottom: 2rem;
+        }
+
+        &:last-of-type{
+            margin-bottom: 4rem;
+        }
+
+        @include respond(tab-break){
+            width: 59.7rem;
+        }
+
+        @include respond(phone-break){
+            font-size: 2.4rem;
+            width: 42rem;
+        }
+    }
+
+    &__list{
+        margin: 5.8rem 0 7rem 0;
+    }
+}
+
+.roadmap{
+    &__title{
+        margin-bottom: 3.4rem;
+    }
+
+    &__heading{
+        margin-bottom: 5.2rem;
+        width: 108rem;
+        color: $black-2;
+
+        @include respond(tab-break){
+            width: 60.3rem;
+        }
+
+        @include respond(phone-break){
+            width: 47.3rem;
+            font-size: 4rem;
+        }
+    }
+
+    &__text{
+        width: 92rem;
+        margin: 0 auto;
+        & > *:not(:last-child){
+            margin-bottom: 3rem;
+        }
+
+        @include respond(tab-break){
+            width: 52rem;
+        }
+
+        @include respond(phone-break){
+            width: 49rem;
+        }
+    }
+}
+
+.spill{
+    &__heading{
+        font-size: 4.8rem;
+        width: 100%;
+        line-height: 6.7rem;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+
+        @include respond(tab-break){
+            width: 69rem;
+            font-size: 3.2rem;
+            line-height: 4.48rem;
+        }
+
+        @include respond(phone-break){
+            width: 51.8rem;
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.blueprint{
+    &__text{
+        width: 76.6rem;
+        margin: 0 auto;
+
+        @include respond(tab-break){
+            width: 57.4rem;
+            font-size: 2rem;
+        }
+
+        @include respond(phone-break){
+            width: 53.4rem;
+        }
+
+        &--full{
+            margin: 0 auto;
+            width: 112rem;
+            margin-bottom: 4rem;
+            
+            @include respond(tab-break){
+                width: 68.2rem;
+                font-weight: 700;
+            }
+
+            @include respond(phone-break){
+                width: 52rem;
+                font-size: 2.2rem;
+                line-height: 2.9rem;
+            }
+            
+        }
+    }
+}

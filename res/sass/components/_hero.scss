@@ -1,0 +1,229 @@
+.hero{
+    display: flex;
+
+    &__badge{
+        padding: 1rem 7.2rem;
+        background-color: $blue-2;
+        color: $white;
+        border-radius: 5rem;
+        font-size: 1.8rem;
+        font-weight: 600;
+        max-width: 60.8rem;
+        text-align: center;
+        margin-bottom: 4rem;
+
+        @include respond(tab-break){
+            font-size: 1.6rem;
+        }
+
+        @include respond(phone-break){
+            font-size: 1.8rem;
+            padding: 1rem 2.2rem;
+        }
+    }
+
+    &__center{
+        margin-bottom: 15.2rem;
+    }
+
+    &__right{
+        position: absolute;
+        right: 0;
+        height: 54.0rem;
+
+        @include respond(tab-break){
+            position: relative;
+            height: 41.2rem;
+        }
+    }
+
+    &__left{
+        &--about{
+            width: 63.4rem;
+            height: auto;
+            @include respond(tab-break){
+                width: 70.3rem;
+                height: auto;
+                margin-bottom: 3.8rem;
+            }
+
+            @include respond(phone-break){
+                width: 51.6rem;
+                height: auto;
+                margin-bottom: .8rem;
+            }
+        }
+
+        &--index{
+            width: 42.8rem;
+            height: auto;
+
+            @include respond(tab-break){
+                width: 100%;
+                margin-bottom: 6.2rem;
+            }
+
+            @include respond(phone-break){
+                width: 52.0rem;
+            }
+        }
+
+        &--checkout{
+            width: 45.7rem;
+        }
+    }
+
+    &__svg{
+        width: 62.9rem;
+        height: 54.0rem;
+        @include respond(tab-break){
+            width: 52.2rem;
+            height: 41.3rem;
+        }
+
+        @include respond(phone-break){
+            height: 37.6rem;
+            width: 49.0rem;
+        }
+    }
+
+    &__text{
+        &--index{
+            font-size: 3.2rem;
+            font-weight: 600;
+            width: 39.3rem;
+            color: $black-1;
+            height: 12.8rem;
+
+            @include respond(tab-break){
+                height: auto;
+                width: 100%;
+            }
+            
+            @include respond(phone-break){
+                font-size: 3.0rem;
+                line-height: 3.0rem;
+                width: 50.4rem;
+                height: auto;
+                text-align: left;
+            }
+        }
+
+        &--about{
+            color: $black-1;
+            width: 54.5rem;
+            height: 12.8rem;
+            font-size: 2.4rem;
+            font-weight: 400;
+            line-height: 3.4rem;
+
+            @include respond(tab-break){
+                width: 66.3rem;
+                height: auto;
+                margin: 0 auto;
+                text-align: center;
+                font-size: 2.2rem;
+                line-height: 2.5rem;
+            }
+
+            @include respond(phone-break){
+                font-size: 2.0rem;
+                line-height: 3.0rem;
+                width: 44.2rem;
+                margin: 0 auto;
+                height: auto;
+                text-align: center;
+            }
+        }
+
+        &--course{
+            width: 92.8rem;
+            text-align: center;
+            margin-bottom: 6.2rem;
+
+            @include respond(tab-break){
+                height: auto;
+                width: 60rem;
+                line-height: 2.5rem;
+            }
+            
+            @include respond(phone-break){
+                font-size: 1.8rem;
+                line-height: 2.16rem;
+                width: 49.4rem;
+                height: auto;
+                text-align: center;
+            }
+        }
+    }
+
+    &__span{
+        @include respond(tab-break){
+            display: block;
+        }
+
+        @include respond(phone-break){
+            display: inline;
+        }
+    }
+
+    &__phone{
+        @include respond(phone-break){
+            display: block;
+        }
+    }
+
+    &__img{
+        
+        &--about{
+            position: absolute;
+            width: 59.6rem;
+            height: 49.2rem;
+            right: 0;
+            bottom: 0;
+
+            @include respond(tab-break){
+                height: 37.8rem;
+                position: absolute;
+                right: 0;
+                width: 45.7rem;
+                height: 37.8rem;
+            }
+
+            @include respond(phone-break){
+                bottom: -.3rem;
+                left: 4.9rem;
+                width: 41.4rem;
+                height: 34.2rem;
+            }
+        }
+
+        &--index{
+            position: absolute;
+            width: 83.4rem;
+            height: 64.2rem;
+            right: 0;
+            top: -6.0rem;
+            
+    
+            @include respond(tab-break){
+                position: relative;
+                top: 0;
+                right: 0;
+                width: 56.0rem;
+                height: 42.7rem;
+            }
+    
+            @include respond(phone-break){
+                width: 43.9rem;
+                height: 33.1rem;
+            }
+        }
+    }
+
+    @include respond(tab-break){
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

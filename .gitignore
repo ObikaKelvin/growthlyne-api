@@ -131,3 +131,12 @@ res/out
 
 #node modules
 node_modules/
+
+#copies of files
+*copy*.*
+public/keiks/
+src/keiks/
+public/*.png
+public/*.jpg
+*.zip
+public/pictures/*

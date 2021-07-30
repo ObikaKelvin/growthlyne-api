@@ -1,0 +1,410 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Lato/Lato-Regular.ttf");
+    font-display: swap; 
+  }
+
+  @font-face {
+    font-family: 'Bitter';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/Bitter/Bitter-VariableFont_wght.ttf');
+    font-display: swap;
+}
+
+a{
+    text-decoration: none;
+    color: $primary-red;
+    font-weight: 700;
+}
+
+.heading{
+    font-family: Bitter;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+
+    &__main{
+        font-size: 4.8rem;
+        line-height: 6.7rem;
+        margin-bottom: 2.0rem;
+    }
+    
+    &__index{
+        text-align: left;
+        text-transform: capitalize;
+
+        @include respond(tab-break){
+            text-align: left;
+            font-size: 3.8rem;
+            line-height: 4.8rem;
+        }
+
+        @include respond(phone-break){
+            text-align: left;
+            font-size: 3.5rem;
+            line-height: 4.8rem;
+        }
+    }
+
+    &__about{
+        font-size: 4.8rem;
+        line-height: 6.7rem;
+        margin-bottom: 3.5rem;
+        text-align: left;
+
+        @include respond(tab-break){
+            text-align: center;
+            font-size: 4.0rem;
+            line-height: 5.6rem;
+            margin-bottom: 2.4rem;
+        }
+
+        @include respond(phone-break){
+            font-size: 3.5rem;
+            text-align: center;
+            line-height: 4.5rem;
+        }
+
+    }
+
+    &__course{
+        font-size: 5.6rem;
+        line-height: 7.8rem;
+        text-align: center;
+
+        @include respond(tab-break){
+            text-align: center;
+            font-size: 4.0rem;
+            line-height: 5.6rem;
+            margin-bottom: 2.4rem;
+        }
+
+        @include respond(phone-break){
+            font-size: 3.5rem;
+            text-align: center;
+            line-height: 4.5rem;
+        }
+
+        &--sm{
+            font-size: 4.8rem;
+        }
+
+    }
+
+    &__quote{
+        font-size: 5.6rem;
+        line-height: 7.8rem;
+        color: $blue-2;
+        width: 111.4rem;
+
+        @include respond(tab-break){
+            font-size: 4.0rem;
+            line-height: 5.6rem;
+            width: 70.2rem;
+        }
+
+        @include respond(phone-break){
+            font-size: 3.8rem;
+            line-height: 4.8rem;
+            width: 53.5rem;
+            margin: 0 auto;
+        }
+
+        &--legal{
+            margin: 0;
+        }
+    }
+
+    &__offer{
+        font-size: 6.4rem;
+        margin-bottom: 6.9rem;
+        width: 101.3rem;
+
+        
+        @include respond(tab-break){
+            font-size: 4.0rem;
+            line-height: 5.6rem;
+            width: 70.3rem;
+            margin-bottom: 5.5rem;
+        }
+
+        @include respond(phone-break){
+            font-size: 4.2rem;
+            line-height: 5.5rem;
+            width: 55.6rem;
+            margin-bottom: 5.5rem;
+        } 
+
+        &--wd{
+            width: 108.0rem;
+        }
+
+        &--md{
+            font-size: 5.2rem;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include respond(tab-break){
+                font-size: 3.8rem;
+                width: 68.0rem;
+            }
+
+            @include respond(phone-break){
+                font-size: 3.5rem;
+                width: 51.0rem;
+            }
+        }
+
+        &--sm{
+            font-size: 4.2rem;
+
+            @include respond(tab-break){
+                font-size: 3.8rem;
+            }
+
+            @include respond(phone-break){
+                font-size: 3.2rem;
+                width: 52.3rem;
+            }
+        }
+        
+        &--course{
+            margin-bottom: 1.5rem;
+            width: 112rem;
+            @include respond(tab-break){
+                width: 54rem;
+            }
+
+            @include respond(tab-break){
+                font-size: 4.0rem;
+            }
+        }
+
+        &--cvn{
+            width: 107rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__legal{
+        font-size: 4.8rem;
+        text-transform: uppercase;
+        text-align: left;
+        margin-bottom: 3.4rem;
+
+        @include respond(tab-break){
+            font-size: 3.8rem;
+        }
+
+    }
+
+    &__checkout{
+        font-family: Bitter;
+        margin-bottom: 4rem;
+
+        &--sm{
+            text-align: center;
+            width: 101rem;
+            font-size: 4rem;
+            line-height: 5.6rem;
+
+            @include respond(tab-break){
+                width: 49rem;
+                margin-bottom: 3.3rem;
+            }
+
+            &__1{
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+
+                @include respond(tab-break){
+                    font-size: 3.2rem;
+                    line-height: 4.4rem;
+                    text-align: left;
+                }
+            }
+        }
+
+        &--lg{
+            font-size: 4.8rem;
+            line-height: 6.7rem;
+        }
+    }
+
+    &__card{
+        font-weight: 400;
+        font-size: 6.2rem;
+        line-height: 4.9rem;
+        font-family: 'Lato' !important;
+
+        @include respond(tab-break){
+            font-size: 4.0rem;
+        }
+    }
+
+    &__contact{
+        font-size: 6.4rem;
+        font-family: Bitter;
+        text-align: center;
+        margin-bottom: 2.8rem;
+
+        @include respond(tab-break){
+            font-size: 5.2rem;
+        }
+
+        @include respond(phone-break){
+            margin-bottom: 0;
+        }
+
+    }
+
+}
+
+.paragraph{
+    display: inline-block;
+    position: relative;
+    margin-bottom: 5.0rem;
+    width: 73.6rem;
+    
+    @include respond(tab-break){
+        margin-bottom: 2.4rem;
+        &:last-child{
+            margin-bottom: 6.2rem;
+        }
+    }
+
+    &__sm{
+        font-size: 2.4rem;
+        line-height: 3.36rem;
+
+        &--1{
+            @include respond(tab-break){
+                font-size: 1.8rem;
+            }
+        }
+
+        &--2{
+            @include respond(tab-break){
+                font-size: 2rem;
+                line-height: 2.9rem;
+            }
+        }
+
+        &--3{
+            @include respond(tab-break){
+                font-size: 2.2rem;
+            }
+
+            @include respond(phone-break){
+                font-size: 2rem;
+            }
+        }
+    }
+
+    &__md{
+        font-size: 3.2rem;
+        line-height: 4.5rem;
+        @include respond(tab-break){
+            line-height: 3.4rem;
+            // width: 44.5rem;
+        }
+        &--1{
+            @include respond(tab-break){
+                font-size: 2.4rem;
+            }
+        }
+
+        &--2{
+            @include respond(tab-break){
+                font-size: 2.0rem;
+            }
+            
+            @include respond(phone-break){
+                font-size: 2.6rem;
+            }
+        }
+
+    }
+
+    &__bg{
+        font-size: 4.0rem;
+        line-height: 4.5rem;
+
+        &--1{
+            @include respond(tab-break){
+                font-size: 3.2rem;
+                line-height: 4.5rem;
+            }
+        }
+
+        &--2{
+            font-size: 4.0rem;
+            line-height: 5.0rem;
+            @include respond(tab-break){
+                font-size: 2.2rem;
+                line-height: 2.8rem;
+            }
+
+            @include respond(phone-break){
+                font-size: 3.5rem;
+                line-height: 4.5rem;
+            }
+            
+        }
+        
+        
+    }
+
+    &--cvn{
+        width: 90rem;
+        margin-bottom: 8rem;
+        text-align: center;
+
+        @include respond(tab-break){
+            width: 67rem;
+        }
+
+        @include respond(tab-break){
+            width: 48rem;
+            font-size: 2.4rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    @include respond(tab-break){
+        width: 44.7rem;
+    }
+
+    @include respond(phone-break){
+        // font-size: 3.8rem;
+        width: 52.7rem;
+    }
+}

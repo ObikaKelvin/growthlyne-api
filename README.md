@@ -45,23 +45,25 @@ Please follow the official [NPM Documentation](https://docs.npmjs.com/downloadin
 
 **XAMPP is required for development.** You are not allowed to use LAMP, WAMP, MAMP and any other PHP development environment.
 
-To install XAMPP, firstly delete all other PHP development environments (if any is installed.)
+To install XAMPP, firstly delete all other PHP development environments (if any are installed.)
 
 Next, please follow the official [XAMPP Documentation](https://www.apachefriends.org/index.html) to install XAMPP.
 
 ### Setting Up The Project
 
-1. Create a new folder on your computer, in a **safe location.** (Do not create it in a folder shared with the network, or on a folder outside of your account.)
+1. Create a new folder on your computer, in a **safe location.** (Do not create it in a folder shared with the network, or on a folder outside of your user account.)
 2. Name the folder `brerasolutions`.
 3. Create a new folder inside, called `breraclub`.
 4. Enter the folder and open your terminal into that folder. (On Windows: Shift + Click > Open Command Prompt Here)
-5. Download the Git repository by running `git clone https://github.com/brerasolutions/breraclub .` — don't forget the dot (`.`) at the end!
+5. Clone this git repository directly into that folder. You can do this by running `git clone https://github.com/brerasolutions/breraclub .` — don't forget the dot (`.`) at the end!
 6. Set your Repman token by running this command: `composer config --global --auth http-basic.brerasolutions.repo.repman.io token your_token`.
-7. Once the Git repository is downloaded, run `composer install` and `npm install` to install all the dependencies.
+7. Once the Git repository is downloaded, run `composer install` and `npm install` to install all the dependencies. (When running `composer install`, you may be required to enter your Repman token again.)
 8. Run XAMPP and start the Apache and MySQL services.
 9. When the Apache server is started, open the [phpMyAdmin interface](http://localhost/phpmyadmin/), and create a new database. Name it `breraclub`.
 10. Rename the `env` file into `.env`. The default settings are configured for XAMPP, but you may have to modify them to suit your XAMPP settings. (Try testing the default values first.)
-11. Run the project using `php spark serve`. (If you get an error, you may have to configure the `.env` file again.)
+11. Run all the migrations via `php spark migrate -all`.
+    * In case you encounter error `Main connection [SQLite3]: Class 'SQLite3' not found` while attempting the migration, open your `.env` file, enable database test credentials by uncommenting them, and make them the same as your default database credentials.
+12. Run the project using `php spark serve`. (If you get an error, you may have to configure the `.env` file again.)
 
 ## Project Structure
 

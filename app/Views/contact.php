@@ -48,19 +48,28 @@
                     </div>
 
                     <div class="form__group">
-                        <label class="form__label">Reason For Writing</label>
-                        <select class="form__input form__select" placeholder="Your Subject" name="subject" id="subject">
-                            <option value="option 1">Your Subject</option>
-                            <option value="option 1">option 1</option>
-                            <option value="option 1">option 1</option>
-                        </select>
+                        <label class="form__label" for="subject1">Reason For Writing</label>
+                        <div class="form__select" id="">
+                            <input type="text" name="" class="form__select--input" id="subject1" placeholder="Your Subject" readonly>
+                            <object class="list__icon list__icon--checkout list__icon--md" data="/svg/Expand_down.svg" type="image/svg+xml">
+                            </object>
+
+                            <div class="form__options">
+                                <ul class="form__options--list">
+                                    <li data-key="0" class="form__options--item form__options--item__active" data-value="none">Your Subject</li>
+                                    <li data-key="1" class="form__options--item" data-value="option 1">option 1</li>
+                                    <li data-key="2" class="form__options--item" data-value="option 2">option 2</li>
+                                    <li data-key="3" class="form__options--item" data-value="option 3">option 3</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="form__group">
                         <label class="form__label">Message</label>
                         <textarea name="message" class="form__input" id="message" cols="30" rows="8" placeholder="Your Message..."></textarea>
                     </div>
-
+                    
                     <input type="submit" value="Send Message" class="btn btn__form btn__form--contact">
                 </form>
             </div>
